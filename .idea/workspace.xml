@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dec_2022_JS.iml" afterDir="false" />
-    </list>
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,11 +59,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675233990473</updated>
-      <workItem from="1675233992153" duration="3823000" />
+      <workItem from="1675233992153" duration="4142000" />
     </task>
+    <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
+      <created>1675238017624</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675238017624</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
+      <created>1675238112778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675238112778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу." />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу." />
   </component>
 </project>
