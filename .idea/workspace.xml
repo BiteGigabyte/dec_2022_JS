@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String" />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +80,7 @@
       <updated>1675233990473</updated>
       <workItem from="1675233992153" duration="4632000" />
       <workItem from="1675259629154" duration="394000" />
-      <workItem from="1675260074374" duration="1441000" />
+      <workItem from="1675260074374" duration="1729000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -138,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675261218166</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
+      <created>1675261670549</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675261670549</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master">
+      <created>1675261777323</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675261777323</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу." />
     <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String" />
-    <option name="LAST_COMMIT_MESSAGE" value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String" />
+    <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
   </component>
 </project>
