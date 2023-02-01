@@ -29,9 +29,9 @@ console.log(typeof a, typeof b, typeof c);
 console.log('');
 
 console.log('Additional_Task:');
-let name = String(prompt("Введіть ім'я:", 'Юрій'));
+let name = prompt("Введіть ім'я:", 'Юрій');
 console.log(name);
-let surname = String(prompt('Введіть по батькові:', 'Русланович'));
+let surname = prompt('Введіть по батькові:', 'Русланович');
 console.log(surname);
-let dateOf = String(prompt('Введіть дату народження:', 'число.місяць.рік народження'));
+let dateOf = prompt('Введіть дату народження:', 'число.місяць.рік народження');
 console.log(dateOf);
