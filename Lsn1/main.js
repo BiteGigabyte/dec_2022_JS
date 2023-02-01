@@ -8,7 +8,7 @@
 //
 // Додаткове для тих хто цікавився prompt`oм
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
-
+//Hello
 let hello = 'hello', owu = "owu", com = `com`, ua = "UA", number1 = 1, number2= 10, number3 = -999, number4 = 123;
 const pI = 3.14;
 let number6 = 2.7, number7 = 16, booleanT = true, booleanF = false;
