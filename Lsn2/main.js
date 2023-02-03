@@ -103,3 +103,115 @@ console.log(user['9']['password']);
 
 //     - Є змінна х, якій ви надаєте довільне числове значення.
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+
+
+let x = 0, a1 = 1, a2 = 0, a3 = -3;
+
+switch (x) {
+        case 0:
+                document.write('<h2>faithfully</h2>');
+                console.log('faithfully');
+        break;
+        default:
+                document.write('<h2>incorrectly</h2>');
+                console.log('incorrectly');
+}
+switch (a1) {
+        case 0:
+                document.write('<h2>faithfully</h2>');
+                console.log('faithfully');
+        break;
+        default:
+                document.write('<h2>incorrectly</h2>');
+        console.log('incorectly');
+}
+switch (a2) {
+        case 0:
+                document.write('<h2>faithfully</h2>');
+                console.log('faithfully');
+        break;
+        default:
+                document.write('<h2>incorrectly</h2>')
+        console.log('incorectly');
+}
+switch (a3) {
+        case 0:
+                document.write('<h2>faithfully</h2>');
+                console.log('faithfully');
+        break;
+        default:
+                document.write('<h2>incorrectly</h2>')
+        console.log('incorectly');
+}
+
+
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+// (в першу, другу, третю или четверту частину години).
+
+x = 7;
+
+if (x >= 0 && x <= 15) {
+        console.log('1 time part');
+} else if (x >= 16 && x <= 30) {
+        console.log('2 time part');
+} else if (x >=31 && x <= 45) {
+        console.log('3 time part');
+} else if (x >= 46 && x >= 60) {
+        console.log('4 time part');
+} else {
+        console.log('wrong number');
+}
+
+// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+x = 30;
+
+if (x >= 0 && x <= 10) {
+        console.log('First Decade');
+} if (x >= 11 && x <= 20) {
+        console.log('Second Decade');
+
+} if (x >= 21 && x <= 30) {
+        console.log('Third Decade');
+} else {
+        console.log('Error. Not valid number.');
+}
+
+
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+x = +prompt('Введіть номер дня від 1 до 7 будь ласка', '7')
+switch (x) {
+        case 1:
+                document.write('<h2>Monday</h2>');
+                console.log('Monday');
+                x = 'Monday';
+                break;
+        case 2:
+                document.write('<h2>Tuesday</h2>');
+                console.log('Tuesday');
+                break;
+        case 3:
+                document.write('<h2>Wednesday</h2>');
+                console.log('Wednesday');
+                break;
+        case 4:
+                document.write('<h2>Thursday</h2>');
+                console.log('Thursday');
+                break;
+        case 5:
+                document.write('<h2>Friday</h2>');
+                console.log('Friday');
+                break;
+        case 6:
+                document.write('<h2>Saturday</h2>');
+                console.log('Saturday');
+                break;
+        case 7:
+                document.write('<h2>Sunday</h2>');
+                console.log('Sunday');
+                break;
+        default:
+                document.write('<h2>Not true day</h2>');
+                console.log('Not true day');
+}
+
+
