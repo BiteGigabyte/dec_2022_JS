@@ -21,6 +21,12 @@
 //
 //
 //     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 
 
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
@@ -177,7 +183,8 @@ if (x >= 0 && x <= 10) {
 }
 
 
-// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+// - Скласти розклад на тиждень за домопоги switch.
+// Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 x = +prompt('Введіть номер дня від 1 до 7 будь ласка', '7')
 switch (x) {
         case 1:
@@ -215,3 +222,64 @@ switch (x) {
 }
 
 
+//     - Користувач вводить або має два числа.
+//         Потрібно знайти та вивести максимальне число з тих двох .
+//         Також потрібно врахувати коли введені рівні числа.
+
+
+x = +prompt('Введіть перше число', '44');
+a1 = +prompt('Введіть друге число', '44');
+if (x>a1) {
+        document.write(x);
+        console.log(x);
+} else if (a1>x) {
+        document.write(a1);
+        console.log(a1);
+} else if (x === a1) {
+        document.write(a1);
+        console.log(a1);
+} else {
+        document.write('Not true');
+        console.log('Not true');
+}
+
+
+
+//     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+//         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+
+x = 0;
+x = x || "default";
+console.log(x);
+
+
+//     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
+//     За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+
+let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+];
+
+if (coursesAndDurationArray[0]['monthDuration'] > 5) {
+        console.log('Super!');
+}
+if (coursesAndDurationArray[1]['monthDuration'] > 5) {
+        console.log('Super!');
+}
+if (coursesAndDurationArray[2]['monthDuration'] > 5) {
+        console.log('Super!');
+}
+if (coursesAndDurationArray[3]['monthDuration'] > 5) {
+        console.log('Super!');
+}
+if (coursesAndDurationArray[4]['monthDuration'] > 5) {
+        console.log('Super!');
+}
+if (coursesAndDurationArray[5]['monthDuration'] > 5) {
+        console.log('Super!');
+}
