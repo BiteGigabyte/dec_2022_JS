@@ -24,7 +24,7 @@
 
 
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let mass = ['lilya', 'tanya', 'kristi', 'nastya', 'katya', 236, 423, 890, 462, 234];
+let mass = ['lilya', 'tanya', 'kristi', 'nastya', 'katya', 'oleh', 'kolya', 'vania', 'maks', 'tolik'];
 console.log(mass);
 
 
@@ -78,15 +78,28 @@ console.log(objcs3);
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 let user = [
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
-        {name: '', username: '', password: ''},
+        {name: mass[0], username: mass[0], password: '1234'},
+        {name: mass[1], username: mass[1], password: '123345'},
+        {name: mass[2], username: mass[2], password: '432134'},
+        {name: mass[3], username: mass[3], password: '12345667'},
+        {name: mass[4], username: mass[4], password: '543264'},
+        {name: mass[5], username: mass[5], password: '2342364236'},
+        {name: mass[6], username: mass[6], password: '1234124'},
+        {name: mass[7], username: mass[7], password: '12328'},
+        {name: mass[8], username: mass[8], password: '6456234'},
+        {name: mass[9], username: mass[9], password: '574243'},
 ];
+console.log(user['0']['password']);
+console.log(user['1']['password']);
+console.log(user['2']['password']);
+console.log(user['3']['password']);
+console.log(user['4']['password']);
+console.log(user['5']['password']);
+console.log(user['6']['password']);
+console.log(user['7']['password']);
+console.log(user['8']['password']);
+console.log(user['9']['password']);
+
+
+//     - Є змінна х, якій ви надаєте довільне числове значення.
+//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
