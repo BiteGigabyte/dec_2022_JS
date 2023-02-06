@@ -95,22 +95,20 @@ let user = [
         {name: mass[8], username: mass[8], password: '6456234'},
         {name: mass[9], username: mass[9], password: '574243'},
 ];
-console.log(user['0']['password']);
-console.log(user['1']['password']);
-console.log(user['2']['password']);
-console.log(user['3']['password']);
-console.log(user['4']['password']);
-console.log(user['5']['password']);
-console.log(user['6']['password']);
-console.log(user['7']['password']);
-console.log(user['8']['password']);
-console.log(user['9']['password']);
+console.log(user[0]['password']);
+console.log(user[1]['password']);
+console.log(user[2]['password']);
+console.log(user[3]['password']);
+console.log(user[4]['password']);
+console.log(user[5]['password']);
+console.log(user[6]['password']);
+console.log(user[7]['password']);
+console.log(user[8]['password']);
+console.log(user[9]['password']);
 
 
 //     - Є змінна х, якій ви надаєте довільне числове значення.
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-
-
 let x = 0, a1 = 1, a2 = 0, a3 = -3;
 
 switch (x) {
@@ -118,18 +116,20 @@ switch (x) {
                 document.write('<h2>faithfully</h2>');
                 console.log('faithfully');
         break;
-        default:
-                document.write('<h2>incorrectly</h2>');
-                console.log('incorrectly');
+default: {
+        document.write('<h2>incorrectly</h2>');
+        console.log('incorrectly');
+}
 }
 switch (a1) {
         case 0:
                 document.write('<h2>faithfully</h2>');
                 console.log('faithfully');
         break;
-        default:
+        default: {
                 document.write('<h2>incorrectly</h2>');
-        console.log('incorectly');
+                console.log('incorectly');
+        }
 }
 switch (a2) {
         case 0:
@@ -138,7 +138,7 @@ switch (a2) {
         break;
         default:
                 document.write('<h2>incorrectly</h2>')
-        console.log('incorectly');
+                console.log('incorectly');
 }
 switch (a3) {
         case 0:
@@ -147,7 +147,7 @@ switch (a3) {
         break;
         default:
                 document.write('<h2>incorrectly</h2>')
-        console.log('incorectly');
+                console.log('incorectly');
 }
 
 

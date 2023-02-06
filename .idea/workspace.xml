@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання. Є відсотків десь 70-75% готово.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 2. Готово.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn2/main.js" afterDir="false" />
     </list>
@@ -65,23 +65,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn2/index.html",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn2/index.html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -104,7 +104,8 @@
       <workItem from="1675358475100" duration="2371000" />
       <workItem from="1675420244705" duration="7831000" />
       <workItem from="1675428607389" duration="18000" />
-      <workItem from="1675446195336" duration="9788000" />
+      <workItem from="1675446195336" duration="10116000" />
+      <workItem from="1675660468908" duration="1997000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675465040566</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="JS домашнє завдання 2. Готово.">
+      <created>1675467032300</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675467032300</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +224,7 @@
     <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
     <MESSAGE value="Почав робити домашнє завдання. Є відсотків десь 10-15% готово." />
     <MESSAGE value="JS домашнє завдання. Є відсотків десь 70-75% готово." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання. Є відсотків десь 70-75% готово." />
+    <MESSAGE value="JS домашнє завдання 2. Готово." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 2. Готово." />
   </component>
 </project>
