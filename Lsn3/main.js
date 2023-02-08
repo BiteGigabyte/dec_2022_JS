@@ -128,7 +128,6 @@ document.write("<h2>Task_6</h2>");
 document.write("");
 
 
-
 //     є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
