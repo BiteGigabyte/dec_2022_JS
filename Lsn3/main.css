@@ -1,0 +1,11 @@
+ /*ШАБЛОН*/
+ /*<div class="product-card">*/
+ /*    <h3 class="product-title">TITLE. Price - PRICE</h3>*/
+ /*<img src="IMAGE" alt="" class="product-image">*/
+ /*</div>*/
+ /*Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту*/
+
+
+ .product-image {
+    width: 30%;
+}
