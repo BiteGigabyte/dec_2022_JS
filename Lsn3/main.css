@@ -1,11 +1,18 @@
- /*ШАБЛОН*/
- /*<div class="product-card">*/
- /*    <h3 class="product-title">TITLE. Price - PRICE</h3>*/
- /*<img src="IMAGE" alt="" class="product-image">*/
- /*</div>*/
- /*Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту*/
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-card {
+    width: 100%;
+    padding: 0 4%;
+    box-sizing: border-box;
+}
 
-
- .product-image {
+.product-image {
     width: 30%;
 }
