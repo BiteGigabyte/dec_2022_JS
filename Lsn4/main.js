@@ -1,106 +1,97 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+document.write(`<div class="bodys">`);
 document.write(`<h2>Task_1<h2>`);
-document.write(`<div></div>`);
-let a = 4, b = 4;
-
 //
+let a = 4, b = 4;
 function rectangle(a, b) {
     return (a * b);
 }
-
-// console.log(typeof a, b);
 //
 document.write(`<div>a = ${a}, b = ${b}</div>`);
 document.write(`<div>result is: ${rectangle(a, b)}</div>`);
 document.write(`<h3>-------------------</h3>`);
 
 
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 document.write(`<h2>Task_2<h2>`);
-document.write(`<div></div>`);
-let r = 5;
-
 //
+let r = 5;
 function circle(r) {
     let pi = 3.141592;
     return (pi * (r * r));
 }
-
 //
 document.write(`<div>radius is: ${r}</div>`);
 document.write(`<div>result is: ${circle(r)}</div>`);
 document.write(`<h3>-------------------</h3>`);
 
 
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 //S = 2 π R h + 2 π R 2
 document.write(`<h2>Task_3<h2>`);
-document.write(`<div></div>`);
-let h = 10, r1 = 30;
-
 //
+let h = 10, r1 = 30;
 function cylinder(r1, h) {
     let pi = 3.141592;
     return ((2 * pi * r1 * h) + (2 * pi * (r1 * r1)));
 }
-
 //
 document.write(`<div>radius is: ${r1}, height is: ${h}</div>`);
 document.write(`<div>result is: ${cylinder(r1, h)}</div>`);
 document.write(`<h3>-------------------</h3>`);
 
 
+
 // - створити функцію яка приймає масив та виводить кожен його елемент
 document.write(`<h2>Task_4<h2>`);
-document.write(`<div></div>`);
+//
 let arrayOne = [2, 1, 4, 3, 6, 5, 8, 7];
-
 function cout(arrayOne) {
     for (const arrayOneElement of arrayOne) {
         document.write(`${arrayOneElement} `);
     }
 }
-
+//
 cout(arrayOne);
 document.write(`<h3>-------------------</h3>`);
 
 
+
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 document.write(`<h2>Task_5<h2>`);
-document.write(`<div></div>`);
-
+//
 function paragraph(arguments) {
     return `<p>${arguments}</p>`;
 }
-
 //
 document.write(paragraph(`Lorem ipsum dolor sit amet.`));
 document.write(`<h3>-------------------</h3>`);
 
 
+
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 document.write(`<h2>Task_6<h2>`);
-document.write(`<div></div>`);
 //
 function threeLi(arguments) {
     document.write(`<ul>`);
     for (let f = 0; f < 3; ++f) {
         document.write(`<li>${arguments}</li>`)
     }
-    document.write(`<ul>`);
+    document.write(`</ul>`);
 
 // threeLi(`Lorem ipsum dolor sit amet, consectetur.`);
 }
-
+//
 threeLi('Lorem ipsum dolor sit amet, consectetur.');
 document.write(`<h3>-------------------</h3>`);
 
 
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-document.write(`<h2>Task_6<h2>`);
+document.write(`<h2>Task_7<h2>`);
 // document.write(`<div></div>`);
-
 
 
 
@@ -115,3 +106,4 @@ document.write(`<h2>Task_6<h2>`);
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
 
+document.write(`</div>`);
