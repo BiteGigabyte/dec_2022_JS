@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку.">
+      <change afterPath="$PROJECT_DIR$/Lsn4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn4/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn3/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn3/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn3/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -72,7 +72,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn3/index.html&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn4/index.html&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -87,7 +87,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn3/index.html" useBuiltInWebServerPort="true">
+    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn4/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
   </component>
@@ -114,7 +114,13 @@
       <workItem from="1675706830760" duration="8547000" />
       <workItem from="1675808512341" duration="11003000" />
       <workItem from="1675853620365" duration="1114000" />
-      <workItem from="1675857900530" duration="3051000" />
+      <workItem from="1675857900530" duration="3132000" />
+      <workItem from="1675890389186" duration="135000" />
+      <workItem from="1676142079137" duration="7116000" />
+      <workItem from="1676210765481" duration="1936000" />
+      <workItem from="1676224310577" duration="3461000" />
+      <workItem from="1676227801764" duration="235000" />
+      <workItem from="1676228047283" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -256,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675821165377</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку.">
+      <created>1675861042098</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675861042098</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +286,7 @@
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком" />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків десь 60%." />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%." />
+    <MESSAGE value="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку." />
   </component>
 </project>
