@@ -102,7 +102,7 @@ function threeLiTwo(arguments, count) {
 // threeLi(`Lorem ipsum dolor sit amet, consectetur.`);
 }
 //
-threeLi('Lorem ipsum dolor sit amet, consectetur.', 3);
+threeLiTwo('Lorem ipsum dolor sit amet, consectetur.', 2);
 document.write(`<h3>-------------------</h3>`);
 
 
