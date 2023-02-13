@@ -223,24 +223,58 @@ document.write(`<h3>-------------------</h3>`);
 document.write("<br>");
 document.write("<h2>Task_13</h2>");
 //
+function exchanges(sumUAH, currencyValues, exchangeCurrency) {
+let exchange = {summary: sumUAH, currency: exchangeCurrency, value: currencyValues};
+    return {
+        objectOne:
+            function ()
+            {
+                return [(exchange['summary'] / exchange['value']), exchange['currency']];
+            }
+        }
+    // return xxx;
+    // return exchangesx(sumUAH, currencyValues, exchangeCurrency);
+}
+// document.write(`You will have: ${exchangesx(sumUAH, currencyValues)} ${exchangeCurrency}.`);
+//
+let exchng = exchanges(10000, 40,"USD");
+    console.log(exchng.objectOne()[0], exchng.objectOne()[1]);
+        document.write(`You will have: ${exchng.objectOne()[0]} ${exchng.objectOne()[1]}.`);
+//
+document.write("<br>");
+document.write("<br>");
+document.write("<h2>/////////////////--FINISH--/////////////////////</h2>");
+    let exchngTwo = exchanges(20000, 42, "EUR");
+        console.log(exchngTwo.objectOne());
+//Спробував змінити назву валюти або курсу та перевірити чи працює закрита функція
+        exchng.objectOne()[1] = 'GBP';
+        exchng.objectOne()[0] = 100;
+        console.log(exchngTwo.objectOne());
+///////
+//
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//Остання задача тільки без замкнутої функції...
+/*document.write("<br>");
+document.write("<h2>Task_13</h2>");
+//
 let exchanges = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}];
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     let result;
-if (exchangeCurrency === 'USD') {
-    result = sumUAH / currencyValues;
-} else if (exchangeCurrency === 'EUR') {
-    result = sumUAH / currencyValues;
-}
+    if (exchangeCurrency === 'USD') {
+        result = sumUAH / currencyValues;
+    } else if (exchangeCurrency === 'EUR') {
+        result = sumUAH / currencyValues;
+    }
     document.write(`You will have: ${result}$.`);
 }
 //
 exchange(10000, exchanges[0]["value"],"USD");
 document.write("<br>");
 document.write("<br>");
-document.write("<h2>//////////////////////////////////////</h2>");
-//
-// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+document.write("<h2>//////////////////////////////////////</h2>");*/
 
 
 
