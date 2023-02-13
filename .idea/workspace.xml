@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 53%.&#10;- роблю далі.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 70%.&#10;- роблю далі.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn4/main.js" afterDir="false" />
     </list>
@@ -121,7 +121,7 @@
       <workItem from="1676227801764" duration="235000" />
       <workItem from="1676228047283" duration="8552000" />
       <workItem from="1676239606916" duration="2537000" />
-      <workItem from="1676242863718" duration="1422000" />
+      <workItem from="1676242863718" duration="5213000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -305,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676235033658</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 70%.&#10;- роблю далі.">
+      <created>1676244371108</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676244371108</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +334,7 @@
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 52%.&#10;- роблю далі." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 55%.&#10;- роблю далі." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 53%.&#10;- роблю далі." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 53%.&#10;- роблю далі." />
+    <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 70%.&#10;- роблю далі." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 70%.&#10;- роблю далі." />
   </component>
 </project>

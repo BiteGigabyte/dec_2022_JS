@@ -201,15 +201,46 @@ document.write(`<h3>-------------------</h3>`);
 
 
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+// Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 document.write("<br>");
 document.write("<h2>Task_12</h2>");
 //
+let arrayE = [9, 7, 8, 6, 5, 3, 4, 2, 0, 1];
+function swap(arr, index1, index2) {
+    let x = arr[index2];
+    arr[index2] = arr[index1];
+    arr[index1] = x;
+    document.write(arr);
+}
+//
+swap(arrayE, 8, 0);
+document.write(`<h3>-------------------</h3>`);
 
 
 
-
-
-// Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+document.write("<br>");
+document.write("<h2>Task_13</h2>");
+//
+let exchanges = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}];
+function exchange(sumUAH, currencyValues, exchangeCurrency) {
+    let result;
+if (exchangeCurrency === 'USD') {
+    result = sumUAH / currencyValues;
+} else if (exchangeCurrency === 'EUR') {
+    result = sumUAH / currencyValues;
+}
+    document.write(`You will have: ${result}$.`);
+}
+//
+exchange(10000, exchanges[0]["value"],"USD");
+document.write("<br>");
+document.write("<br>");
+document.write("<h2>//////////////////////////////////////</h2>");
+//
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
