@@ -232,10 +232,7 @@ let exchange = {summary: sumUAH, currency: exchangeCurrency, value: currencyValu
                 return [(exchange['summary'] / exchange['value']), exchange['currency']];
             }
         }
-    // return xxx;
-    // return exchangesx(sumUAH, currencyValues, exchangeCurrency);
 }
-// document.write(`You will have: ${exchangesx(sumUAH, currencyValues)} ${exchangeCurrency}.`);
 //
 let exchng = exchanges(10000, 40,"USD");
     console.log(exchng.objectOne()[0], exchng.objectOne()[1]);
