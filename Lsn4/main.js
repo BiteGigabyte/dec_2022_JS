@@ -199,7 +199,6 @@ sum(arrayD);
 document.write(`<h3>-------------------</h3>`);
 
 
-
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 document.write("<br>");
@@ -224,26 +223,37 @@ document.write("<br>");
 document.write("<h2>Task_13</h2>");
 //
 function exchanges(sumUAH, currencyValues, exchangeCurrency) {
-let exchange = {summary: sumUAH, currency: exchangeCurrency, value: currencyValues};
+    let exchange = {summary: sumUAH, value: currencyValues, currency: exchangeCurrency};
     return {
         objectOne:
             function ()
             {
-                return [(exchange['summary'] / exchange['value']), exchange['currency']];
+                for (let i = 0; i < exchange['value'].length; ++i) {
+                    if (exchange['currency'] === exchange['value'][i]['currencys'])
+                    {
+                        return [exchange['summary'] / exchange['value'][i]['values'], exchange['value'][i]['currencys']];
+                    }
+                }
+
+
             }
-        }
+    }
 }
 //
-let exchng = exchanges(10000, 40,"USD");
-    console.log(exchng.objectOne()[0], exchng.objectOne()[1]);
-        document.write(`You will have: ${exchng.objectOne()[0]} ${exchng.objectOne()[1]}.`);
+const moneys = [{currencys:"USD",values:40},{currencys:"EUR",values:42}];
+let exchng = exchanges(10000, moneys, "USD");
 //
+document.write(`You will have: ${exchng.objectOne()[0]} ${exchng.objectOne()[1]}.`);
+console.log(exchng.objectOne()[0], exchng.objectOne()[1]);
 document.write("<br>");
 document.write("<br>");
 document.write("<h2>/////////////////--FINISH--/////////////////////</h2>");
-    let exchngTwo = exchanges(20000, 42, "EUR");
+//
+//
+    let exchngTwo = exchanges(20000, moneys, "EUR");
         console.log(exchngTwo.objectOne());
 //Спробував змінити назву валюти або курсу та перевірити чи працює закрита функція
+        exchng.objectOne()[1].exchange['value'] = 'GBP';
         exchng.objectOne()[1] = 'GBP';
         exchng.objectOne()[0] = 100;
         console.log(exchngTwo.objectOne());
@@ -253,7 +263,7 @@ document.write("<h2>/////////////////--FINISH--/////////////////////</h2>");
 //
 //
 //
-//Остання задача тільки без замкнутої функції...
+////Остання задача тільки без замкнутої функції...
 /*document.write("<br>");
 document.write("<h2>Task_13</h2>");
 //
