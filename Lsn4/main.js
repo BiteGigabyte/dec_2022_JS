@@ -247,7 +247,7 @@ document.write(`You will have: ${exchng.objectOne()[0]} ${exchng.objectOne()[1]}
 console.log(exchng.objectOne()[0], exchng.objectOne()[1]);
 document.write("<br>");
 document.write("<br>");
-document.write("<h2>/////////////////--FINISH--/////////////////////</h2>");
+document.write("<h2>/////////////////--FINISH--////////////////////</h2>");
 //
 //
     let exchngTwo = exchanges(20000, moneys, "EUR");
