@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 5 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть.">
-      <change afterPath="$PROJECT_DIR$/Lsn6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lsn6/main.js" afterDir="false" />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lsn6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn6/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       <workItem from="1676660383512" duration="3674000" />
       <workItem from="1676664314431" duration="2357000" />
       <workItem from="1676764172222" duration="1546000" />
-      <workItem from="1676802247632" duration="10903000" />
+      <workItem from="1676802247632" duration="25266000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -391,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676475716518</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11">
+      <created>1676813806123</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1676813806123</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,6 +426,7 @@
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 5завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 5 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 5 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
+    <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11" />
   </component>
 </project>

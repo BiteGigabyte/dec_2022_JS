@@ -157,49 +157,151 @@ console.log('');
 //
 console.log('TASK 9:');
 //
-let cards = [[],[],[],[]];
+console.log('Описана колода:');
+let cards = [];
 // function crds = (cards, ) {
-    for (let i = 0; i < cards.length; ++i) {
+    for (let i = 0; i < 4; ++i) {
         let masti = ['spade', 'diamond','heart', 'clubs'];
-        let color = (i1) => {if (i1 === 0 || i1 === 3) {return 'black';}else if (i1 === 1 || i1 === 2) {return 'red';}};
+        let numbers = [6, 7, 8, 9, 10,'jack','queen','king', 'ace'];
+        let color = (i1) => {if (i1 === 0 || i1 === 3) {return 'black';} else if (i1 === 1 || i1 === 2) {return 'red';}};
         for (let j = 0; j < 9; ++j) {
-                if (j < 5) {
-                    cards[i][j] = {cardSuit: masti[i], value: j + 6, color: color(i)}
-                } else {
-                    switch (j) {
-                        case 5:
-                            cards[i][j] = {cardSuit: masti[i], value: 'jack', color: color(i)}
-                            break;
-                        case 6:
-                            cards[i][j] = {cardSuit: masti[i], value: 'queen', color: color(i)}
-                            break;
-                        case 7:
-                            cards[i][j] = {cardSuit: masti[i], value: 'king', color: color(i)}
-                            break;
-                        case 8:
-                            cards[i][j] = {cardSuit: masti[i], value: 'ace', color: color(i)}
-                            break;
-
-                    }
+                if (i === 0) {
+                    cards[j] = {cardSuit: masti[i], value: numbers[j], color: color(i)}
+                } else if (i === 1) {
+                    cards[j + 9] = {cardSuit: masti[i], value: numbers[j], color: color(i)}
+                } else if (i === 2) {
+                    cards[j + 18] = {cardSuit: masti[i], value: numbers[j], color: color(i)}
+                } else if (i === 3) {
+                    cards[j + 27] = {cardSuit: masti[i], value: numbers[j], color: color(i)}
                 }
         }
     }
 //}
-
-
-
 console.log(cards);
+//
+console.log('Виконані завдання: ');
+//+ знайти піковий туз
+console.log(cards.filter((card) => card['value'] === 'ace' && card['cardSuit'] === 'spade'));
+//+ знайти всі шістки
+console.log(cards.filter((card) => card['value'] === 6));
+//+ знайти всі червоні карти
+console.log(cards.filter((card) => card['color'] === 'red'));
+//+ знайти всі буби
+console.log(cards.filter((card) => card['cardSuit'] === 'diamond'));
+//+ знайти всі трефи від 9 та більше
+console.log(cards.filter((card) => card['cardSuit'] === 'clubs' && card['value'] !== 6 && card['value'] !== 7 && card['value'] !== 8));
+//
+console.log('');
+
+
 
 // =========================
 //
-//     Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
+//
 // {
 //     spades:[],
 //         diamonds:[],
 //     hearts:[],
 //     clubs:[]
 // }
+//
+console.log('TASK 10:');
+//
+//взяв описану колоду карт cards
+console.log(cards);
+//
+cards = cards.reduce((accumulator, value) => {
+    if (value['cardSuit'] === 'spade') {
+        accumulator['spades'].push(value);
+    } else if (value['cardSuit'] === 'diamond') {
+        accumulator['diamonds'].push(value);
+    } else if (value['cardSuit'] === 'heart') {
+        accumulator['hearts'].push(value);
+    } else if (value['cardSuit'] === 'clubs') {
+        accumulator['clubs'].push(value);
+    }
+    return accumulator;
+}, {spades: [], diamonds: [], hearts: [], clubs: []});
+//
+console.log(cards);
+//
+console.log('');
+
+
+
 // =========================
 //     взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
 // --написати пошук всіх об'єктів, в який в modules є docker
+//
+console.log('TASK 11:');
+//
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
