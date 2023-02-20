@@ -305,3 +305,18 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
+//
+//пошук об'єктів
+for (let i = 0; i < coursesArray.length; ++i) {
+    if (coursesArray[i]['modules'].find(word => word === 'sass') === 'sass')
+    {
+        console.log(`The ${[i + 1]} object have "sass"!`)
+    }
+    if (coursesArray[i]['modules'].find(word => word === 'docker') === 'docker')
+    {
+        console.log(`The ${[i + 1]} object have "docker"!`)
+    }
+}
+//
+console.log('');
+console.log('ENDED!');
