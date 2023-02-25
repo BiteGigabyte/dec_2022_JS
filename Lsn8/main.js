@@ -5,7 +5,7 @@ console.log('TASK_1:');
 function User (id, name, surname , email, phone){
     this.id = id;
     this.name = name;
-    this. surname = surname;
+    this.surname = surname;
     this.email = email;
     this.phone = phone;
 }
