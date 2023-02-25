@@ -1,6 +1,7 @@
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 //
+//
 console.log('TASK 1:');
 let arr1 = ['hello world', 'lorem ipsum', 'javascript is cool'];
 //
@@ -307,6 +308,7 @@ let coursesArray = [
 ];
 //
 //пошук об'єктів
+//мій варіант з тим щоб виводило індекс
 for (let i = 0; i < coursesArray.length; ++i) {
     if (coursesArray[i]['modules'].find(word => word === 'sass') === 'sass')
     {
@@ -317,6 +319,35 @@ for (let i = 0; i < coursesArray.length; ++i) {
         console.log(`The ${[i + 1]} object have "docker"!`)
     }
 }
+
+
+// for (let i = 0; i < coursesArray.length; ++i) {
+    // if (coursesArray[i]['modules'].find(word => word === 'sass') === 'sass')
+    // {
+    //     console.log(`The ${[i + 1]} object have "sass"!`)
+    // }
+    // if (coursesArray[i]['modules'].find(word => word === 'docker') === 'docker')
+    // {
+    //     console.log(`The ${[i + 1]} object have "docker"!`)
+    // }
+// }
+
+//Правильніший варіант
+// // --написати пошук всіх об'єктів, в який в modules є sass
+// console.log(coursesArray.filter((item, index) =>  item.modules.includes('sass')));
+// // --написати пошук всіх об'єктів, в який в modules є docker
+// console.log(coursesArray.filter(item =>  item.modules.includes('docker')));
 //
+//
+
+//
+// let letsgo = [
+//     {age:  213, name: 'bitia'},
+//     {age:  213, name: 'bitia'},
+//     {age:  213, name: 'bitia'},
+//     {age:  213, name: 'bitia', fooo: function () {console.log('Yes!')}}
+// ]
+
+
 console.log('');
 console.log('ENDED!');
