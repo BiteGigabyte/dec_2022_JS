@@ -54,6 +54,49 @@ console.log('');
 //
 console.log('TASK_4:');
 
+class Client {
+
+    constructor (id, name, surname , email, phone, order) {
+        this.id = [id];
+        this.name = [name];
+        this.surname = [surname];
+        this.email = [email];
+        this.phone = [phone];
+        this.order = [order];
+}
+}
+
+
+// function generateDataArray(n) {
+    // const dataArray = [];
+    const names = ["John", "Jane", "Bob", "Mary", "Tom", "Kate"];
+    const surnames = ["Smith", "Doe", "Johnson", "Lee", "Brown", "Davis"];
+    const emails = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "icloud.com", "aol.com"];
+    const orders = ["book", "phone", "laptop", "shoes", "shirt", "hat"];
+
+    for (let i = 1; i <= n; i++) {
+        const name = names[Math.floor(Math.random() * names.length)];
+        const surname = surnames[Math.floor(Math.random() * surnames.length)];
+        const email = `${name.toLowerCase()}.${surname.toLowerCase()}@${emails[Math.floor(Math.random() * emails.length)]}`;
+        const phone = `+380-${Math.floor(Math.random() * 100000000 + 900000000)}`; // generate random phone number
+        const order = orders[Math.floor(Math.random() * orders.length)];
+
+        // dataArray.push({
+        //     id: i + 1000,
+        //     name: name,
+        //     surname: surname,
+        //     email: email,
+        //     phone: phone,
+        //     order: order
+        // });
+    }
+
+    // return dataArray;
+// }
+
+
+// const dataArray = generateDataArray(10); // створить масив з 10 об'єктів
+// console.log(dataArray);
 
 
 console.log('');

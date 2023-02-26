@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! 100%.&#10;- Доробив 11\11." />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 8 in progress.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lsn8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn8/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +56,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c77f975b-3095-4648-85c9-1e385a5bff68" />
+        <option name="url" value="https://github.com/BiteGigabyte/dec_2022_JS.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,26 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn8/index.html",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn8/index.html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yurii\IdeaProjects\dec_2022_JS\Lsn8" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn8/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -143,7 +164,9 @@
       <workItem from="1676975508183" duration="2000" />
       <workItem from="1677170986907" duration="5145000" />
       <workItem from="1677241360579" duration="433000" />
-      <workItem from="1677268734681" duration="14961000" />
+      <workItem from="1677268734681" duration="21193000" />
+      <workItem from="1677409905013" duration="911000" />
+      <workItem from="1677429803628" duration="3809000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -425,14 +448,20 @@
       <option name="project" value="LOCAL" />
       <updated>1677326680223</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="JS домашнє завдання 8 in progress.">
+      <created>1677362636715</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1677362636715</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу." />
     <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String" />
     <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
     <MESSAGE value="Почав робити домашнє завдання. Є відсотків десь 10-15% готово." />
@@ -457,6 +486,7 @@
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11" />
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 90%.&#10;- Доробляю 11\11" />
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! 100%.&#10;- Доробив 11\11." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! 100%.&#10;- Доробив 11\11." />
+    <MESSAGE value="JS домашнє завдання 8 in progress." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 8 in progress." />
   </component>
 </project>
