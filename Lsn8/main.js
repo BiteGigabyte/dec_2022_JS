@@ -166,26 +166,54 @@ console.log('');
 //
 console.log('TASK_6:');
 //
-// function Car (model, manufacturer, year, speed, engine) {
-//     this.model = model;
-//     this.manufacturer = manufacturer;
-//     this.year = year;
-//     this.speed = speed;
-//     this.engine = engine;
-//     this.drive = function () {console.log(`їдемо зі швидкістю ${this.speed} на годину`)};
-//     this.info = function () {
-//         for (let key in this) {
-//             if (typeof this[key] !== "function") {
-//                 console.log(`${key}: ${this[key]}`);
-//             }
-//         }
-//     };
-//     this.increaseMaxSpeed = function (newSpeed) {
-//         this.speed = newSpeed;
-//     };
-//     this.changeYear = function (newValue) {this.year = newValue;};
-//     this.addDriver = function (driver) {this.driver = driver;};
-// }
+class Car1 {
+    constructor (model, manufacturer, year, speed, engine) {
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.year = year;
+        this.speed = speed;
+        this.engine = engine;
+    }
+    drive () {console.log(`їдемо зі швидкістю ${this.speed} на годину`)};
+    info () {
+        for (let key in this) {
+            if (typeof this[key] !== "function") {
+                console.log(`${key}: ${this[key]}`);
+            }
+        }
+    };
+    increaseMaxSpeed (newSpeed) {
+        this.speed = newSpeed;
+    };
+    changeYear (newValue) {this.year = newValue;};
+    addDriver (driver) {this.driver = driver;};
+}
+
+//
+//
+//Перевірка роботи функції:
+// Створення екземпляру об'єкту класу car
+const myCar1 = new Car1("Civic", "Toyota", 2020, 150, "4-cylinder");
+//
+//вивів об'єкт
+console.log(myCar1);
+// Виклик методу drive
+myCar1.drive();
+// Виклик методу info
+myCar1.info();
+// Виклик методу increaseMaxSpeed
+myCar1.increaseMaxSpeed(200);
+// Виклик методу changeYear
+myCar1.changeYear(2021);
+// Виклик методу addDriver
+myCar1.addDriver("John Doe");
+//
+//вивів 2й раз об'єкт вже змінений
+console.log(myCar1);
+// console.log(myCar?.driver);
+//
+//
+console.log('');
 
 
 
@@ -193,3 +221,5 @@ console.log('TASK_6:');
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+//
+//
