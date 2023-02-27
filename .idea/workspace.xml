@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn8/main.js" afterDir="false" />
     </list>
@@ -167,7 +167,7 @@
       <workItem from="1677268734681" duration="21193000" />
       <workItem from="1677409905013" duration="911000" />
       <workItem from="1677429803628" duration="6980000" />
-      <workItem from="1677448769121" duration="9551000" />
+      <workItem from="1677448769121" duration="17762000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -470,14 +470,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677457498325</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач.">
+      <created>1677459742152</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1677459742152</updated>
+    </task>
+    <task id="LOCAL-00045" summary="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач.">
+      <created>1677459814855</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1677459814855</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master" />
     <MESSAGE value="Почав робити домашнє завдання. Є відсотків десь 10-15% готово." />
     <MESSAGE value="JS домашнє завдання. Є відсотків десь 70-75% готово." />
     <MESSAGE value="JS домашнє завдання 2. Готово." />
@@ -502,6 +515,7 @@
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! 100%.&#10;- Доробив 11\11." />
     <MESSAGE value="JS домашнє завдання 8 in progress." />
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач." />
+    <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач." />
   </component>
 </project>

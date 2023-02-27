@@ -229,3 +229,54 @@ console.log('');
 //
 console.log('TASK_7:');
 //
+function Cinderella (name, age, size) {
+    this.name = name;
+    this.age = age;
+    this.size = size;
+}
+//масив для генерації імен
+const colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Black', 'White', 'Gray', 'Brown'];
+//Створив масив
+let cinderellas = [];
+//Заповнив його 10 попелюшками
+for (let i = 0; i < 10; ++i) {
+    cinderellas[i] = new Cinderella(
+        colors[Math.floor(Math.random() * colors.length)],
+        Math.floor(Math.random() * (26 - 18 + 1) + 18),
+        Math.floor(Math.random() * (38 - 32 + 1) + 32)
+    );
+}
+//створив принца та присвоїв йому значення 1ї з попелшок
+class Prince {
+    constructor (name, age, shoe) {
+        this.name = name;
+        this.age = age;
+        this.shoe = shoe;
+    }
+}
+// згенерував випадкове значення з масиву попелюшок та вказав знахідку принцу якого теж створив
+let finds = Math.floor(Math.random() * cinderellas.length);
+const prince = new Prince(cinderellas[finds]['name'], cinderellas[finds]['age'], cinderellas[finds]['size']);
+//Виводжу обєкти щоб побачити чи працює добре пошук
+console.log(cinderellas);
+console.log(prince);
+//Пошук...
+console.log('');
+//Виводжу циклом знайдений варіант
+for (let i = 0; i < cinderellas.length; ++i) {
+    if (prince['name'] === cinderellas[i]['name'] && prince['age'] === cinderellas[i]['age'] && prince['shoe'] === cinderellas[i]['size'])
+    {
+        console.log(`The ${i + 1} cinderella, with ${Object.keys(cinderellas[i])[0]}: ${cinderellas[i]['name']}, ${Object.keys(cinderellas[i])[1]}: ${cinderellas[i]['age']}, ${Object.keys(prince)[2]}: ${cinderellas[i]['size']}, is find for prince`);
+    }
+}
+//Виводжу знайдений варіант за допомогою методу find
+console.log('The needed sinderella: ');
+console.log(cinderellas.find((princess) => {return princess['name'] === prince['name']
+    && princess['age'] === prince['age'] && princess['size'] === prince['shoe'];
+    }));
+
+
+
+console.log('');
+console.log('FINISH');
+
