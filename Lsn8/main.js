@@ -84,14 +84,16 @@ for (let i = 0; i <= 9; i++) {
         Math.floor(Math.random() * 9000000 + 1000000), name, surname, email, phone, order);
 }
 //
-// console.log(client);
+console.log(client);
 //
 //
 //
 //
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 //відсортовую
-console.log(client.sort((a, b) => a.order.length - b.order.length));
+let client0 = structuredClone(client);
+
+console.log(client0.sort((a, b) => a.order.length - b.order.length));
 //
 console.log('');
 

@@ -167,7 +167,8 @@
       <workItem from="1677268734681" duration="21193000" />
       <workItem from="1677409905013" duration="911000" />
       <workItem from="1677429803628" duration="6980000" />
-      <workItem from="1677448769121" duration="17762000" />
+      <workItem from="1677448769121" duration="18014000" />
+      <workItem from="1677468821298" duration="870000" />
     </task>
     <task id="LOCAL-00001" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
       <created>1675238017624</created>
@@ -484,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677459814855</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач.">
+      <created>1677468329340</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1677468329340</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
