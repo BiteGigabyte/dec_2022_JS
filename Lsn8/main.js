@@ -90,13 +90,13 @@ console.log(client);
 //
 //
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
-//відсортовую
-let client0 = structuredClone(client);
-
+//Скопіюю і відсортовую
+// let client0 = structuredClone(client);    //чомусь при такому копіюванні через раз виводить false або true при порівнянні окремих значень
+let client0 = JSON.parse(JSON.stringify(client));
+//
 console.log(client0.sort((a, b) => a.order.length - b.order.length));
 //
 console.log('');
-
 
 
 
