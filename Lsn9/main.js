@@ -207,10 +207,11 @@ for (const simpson of simpsons) {
     h2a.innerText = `${keys[2]} is: ${simpson[keys[2]]}`;
     let p = document.createElement('p');
     p.innerText = `${simpson[keys[3]]}`;
+    p.style.overflowWrap = 'break-word';
     let img = document.createElement('img');
     img.src = `${simpson[keys[4]]}`;
     div1.append(h2, h2a, p, img);
-    img.style.width = '99%';
+    img.style.width = '100%';
 }
 
 
@@ -332,7 +333,7 @@ let month = document.createElement('div');
     //
     month.style.flexGrow = '2';
     //
-    let hours = document.createElement('div');
+let hours = document.createElement('div');
     hours.innerText = `годин: ${coursesArray[i]['hourDuration']}`;
     hours.style.fontWeight = 'bold';
     hours.style.fontStyle = 'italic';
@@ -344,9 +345,9 @@ let month = document.createElement('div');
     //
     block2.append(month, hours);
     //
-    let modules = document.createElement('div');
+let modules = document.createElement('div');
     modules.style.border = '2px solid #106EBE';
-    let ul = document.createElement('ul');
+let ul = document.createElement('ul');
     ul.style.paddingLeft = '2%';
     ul.style.margin = '10px 0';
     for (const ulElement of coursesArray[i]['modules']) {
@@ -400,9 +401,10 @@ form1.style.flexWrap = 'wrap';
 //
 let input1 = document.createElement('input');
 input1.type = 'number';
+input1.placeholder = 'Your age...';
 input1.style.margin = '3px';
 input1.style.display = 'flex';
-input1.style.maxWidth = '100%';
+input1.style.maxWidth = '96%';
 //
 let button1 = document.createElement('button');
 // button1.style.width = '15%';
