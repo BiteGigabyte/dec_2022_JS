@@ -27,6 +27,9 @@ document.body.appendChild(block.cloneNode(true));
 
 
 
+
+
+//==============================================================
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
@@ -57,7 +60,7 @@ ulClass[0].style.clear = 'both';
 
 
 
-
+//==============================================================
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -91,11 +94,12 @@ let div = document.createElement('div');
     div.innerText = `${keys[0]}: ${courses[keys[0]]}, ${keys[1]}: ${courses[keys[1]]};`;
     document.body.appendChild(div);
 }
+
+
+
+
+
 // =========================
-
-
-
-
 //     - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -116,7 +120,7 @@ task4.innerText = 'Task 4';
 task4.style.background = 'silver';
 document.body.appendChild(task4);
 //
-//Звертаюсь до масиву з минулого завдання він такий ж самий.
+//Використовую і звертаюсь до масиву із минулого завдання він такий ж самий.
 //
 for(let i = 0; i < coursesAndDurationArray.length; ++i) {
     let div = document.createElement('div');
@@ -133,11 +137,12 @@ for(let i = 0; i < coursesAndDurationArray.length; ++i) {
     div.append(h1, p);
 }
 //
+
+
+
+
+
 // ==========================
-
-
-
-
 // - є масив simpsons, котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
 // Проітерувати його, створиши для кожного об'єкту  масиву <div class='member'> та наповнити його данними з об'єкту.
 //     Якщо людською мовою: під кожного члена родини зробити блок та наповнити його інформацією з цього об'єкту
@@ -210,19 +215,155 @@ for (const simpson of simpsons) {
 
 
 
+
+
 // =========================
 //     Цикл в циклі
 // - Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
 //
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
-// ------------------
+let task6 = task3.cloneNode(true);
+task6.innerText = 'Task 6';
+task6.style.background = 'none';
+task6.style.paddingTop = '56px';
+document.body.appendChild(task6);
+//
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+//
+//Розв'язок
+for(let i = 0; i < coursesArray.length; ++i){
+let mainBlock = document.createElement('div');
+    mainBlock.style.border = '2px solid red';
+    mainBlock.style.margin = '5px 0px';
+    mainBlock.style.padding = '11px 20px';
+let title = document.createElement('div')
+    title.innerText = `${coursesArray[i]['title']}`;
+    title.style.fontWeight = 'bolder';
+    title.style.fontSize = '27px';
+    title.style.marginTop = '5px';
+    title.style.marginBottom = '2px';
+    title.style.border = '2px solid #106EBE';
+    title.style.padding = '3px';
+let month = document.createElement('div');
+    month.innerText = `місяців: ${coursesArray[i]['monthDuration']}`;
+    month.style.fontWeight = 'bold';
+    month.style.fontStyle = 'italic';
+    month.style.border = '2px solid #106EBE';
+    month.style.margin = '5px 0px';
+    month.style.padding = '11px 20px';
+    month.style.width = '30%';
+    month.style.display = 'inline-block';
+    let hours = document.createElement('div');
+    hours.innerText = `годин: ${coursesArray[i]['hourDuration']}`;
+    hours.style.fontWeight = 'bold';
+    hours.style.fontStyle = 'italic';
+    hours.style.border = '2px solid #106EBE';
+    hours.style.margin = '5px 0px 5px 5px';
+    hours.style.padding = '11px 20px';
+    hours.style.width = '61%';
+    hours.style.display = 'inline-block';
+    let modules = document.createElement('div');
+    modules.style.border = '2px solid #106EBE';
+    let ul = document.createElement('ul');
+    ul.style.paddingLeft = '2%';
+    ul.style.margin = '10px 0';
+    for (const ulElement of coursesArray[i]['modules']) {
+        let li = document.createElement('li');
+        li.style.border = '2px solid #106EBE';
+        li.style.listStylePosition = 'inside';
+        li.style.paddingLeft = '2%';
+        li.style.marginRight = '2%';
+        li.innerText = `${ulElement}`;
+        ul.append(li);
+    }
+    modules.append(ul);
+    //
+mainBlock.append(title, month, hours, modules);
+//
+document.body.appendChild(mainBlock);
+}
+
+
+
+
+
+// ==========================
 //
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
-//
+// ==========================
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
+//============================
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
