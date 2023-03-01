@@ -165,7 +165,7 @@ let simpsons = [
         surname: 'Simpson',
         age: 40,
         info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
-        photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+        photo: 'https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
     },
     {
         name: 'Marge',
@@ -210,6 +210,7 @@ for (const simpson of simpsons) {
     let img = document.createElement('img');
     img.src = `${simpson[keys[4]]}`;
     div1.append(h2, h2a, p, img);
+    img.style.width = '99%';
 }
 
 
@@ -299,10 +300,6 @@ let coursesArray = [
 ];
 //
 //Розв'язок
-//Не додавав flex для двох контейнерів з місяцями та днями
-//тому при зменшенні вони будуть зміщуватись вверх-вниз
-//хоча можна обгорнути ще в 1 div та застосувати flex.
-// Якщо все правильно думаю то НЕ поправляйте а інакше скажете і перероблю?
 for(let i = 0; i < coursesArray.length; ++i){
 let mainBlock = document.createElement('div');
     mainBlock.style.border = '2px solid red';
@@ -310,8 +307,8 @@ let mainBlock = document.createElement('div');
     mainBlock.style.padding = '11px 20px';
 let title = document.createElement('div')
     title.innerText = `${coursesArray[i]['title']}`;
-//чи можна цю команду використовувати?
-    title.style.wordWrap = 'break-word';
+//чи можна цю команду використовувати? Вона щоб прималому вікні букви обрізались вниз
+    title.style.overflowWrap = 'break-word';
     //
     title.style.fontWeight = 'bolder';
     title.style.fontSize = '27px';
@@ -319,18 +316,22 @@ let title = document.createElement('div')
     title.style.marginBottom = '2px';
     title.style.border = '2px solid #106EBE';
     title.style.padding = '3px';
+let block2 = document.createElement('div');
+    block2.style.display = 'flex';
+    block2.style.flexWrap = 'wrap';
 let month = document.createElement('div');
     month.innerText = `місяців: ${coursesArray[i]['monthDuration']}`;
-    //
-    month.style.wordWrap = 'break-word';
+//чи можна використовувати цю команду?
+    month.style.overflowWrap = 'break-word';
     //
     month.style.fontWeight = 'bold';
     month.style.fontStyle = 'italic';
     month.style.border = '2px solid #106EBE';
     month.style.margin = '5px 0px';
     month.style.padding = '11px 20px';
-    month.style.width = '30%';
-    month.style.display = 'inline-block';
+    //
+    month.style.flexGrow = '2';
+    //
     let hours = document.createElement('div');
     hours.innerText = `годин: ${coursesArray[i]['hourDuration']}`;
     hours.style.fontWeight = 'bold';
@@ -338,8 +339,11 @@ let month = document.createElement('div');
     hours.style.border = '2px solid #106EBE';
     hours.style.margin = '5px 0px 5px 5px';
     hours.style.padding = '11px 20px';
-    hours.style.width = '61%';
-    hours.style.display = 'inline-block';
+    //
+    hours.style.flexGrow = '6';
+    //
+    block2.append(month, hours);
+    //
     let modules = document.createElement('div');
     modules.style.border = '2px solid #106EBE';
     let ul = document.createElement('ul');
@@ -357,7 +361,7 @@ let month = document.createElement('div');
     }
     modules.append(ul);
     //
-mainBlock.append(title, month, hours, modules);
+mainBlock.append(title, block2, modules);
 //
 document.body.appendChild(mainBlock);
 }
@@ -375,7 +379,43 @@ task7.innerText = 'Task 7';
 task7.style.background = 'none';
 document.body.appendChild(task7);
 //
-// let button =
+//
+// let DivElement = document.createElement('div');
+// DivElement.id = 'text';
+// document.body.appendChild(DivElement);
+// let ClassText = document.getElementById('text');
+// ClassText = ClassText[0];
+//
+// <form action="/submit-form" method="post">
+//     <input type="text" name="name" placeholder="Введіть ваше ім'я">
+//         <input type="email" name="email" placeholder="Введіть вашу електронну адресу">
+//             <button type="submit">Надіслати</button>
+// </form>
+//
+let form1 = document.createElement('form');
+form1.action = 'none';
+form1.method = 'GET';
+form1.style.display = 'flex';
+form1.style.flexWrap = 'wrap';
+//
+let input1 = document.createElement('input');
+input1.type = 'number';
+input1.style.margin = '3px';
+input1.style.display = 'flex';
+input1.style.maxWidth = '100%';
+//
+let button1 = document.createElement('button');
+// button1.style.width = '15%';
+// button1.style.height = '23px';
+button1.style.margin = '3px';
+button1.innerText = 'PRESS';
+button1.style.display = 'flex';
+button1.style.overflowWrap = 'breal-word';
+//
+form1.append(input1, button1);
+document.body.appendChild(form1);
+// ClassText.appendChild(form1);
+// document.body.appendChild(form1);
 
 
 
@@ -383,6 +423,10 @@ document.body.appendChild(task7);
 // ==========================
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
+
+
+
+
 //============================
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
