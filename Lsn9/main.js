@@ -380,21 +380,9 @@ task7.innerText = 'Task 7';
 task7.style.background = 'none';
 document.body.appendChild(task7);
 //
-//
-// let DivElement = document.createElement('div');
-// DivElement.id = 'text';
-// document.body.appendChild(DivElement);
-// let ClassText = document.getElementById('text');
-// ClassText = ClassText[0];
-//
-// <form action="/submit-form" method="post">
-//     <input type="text" name="name" placeholder="Введіть ваше ім'я">
-//         <input type="email" name="email" placeholder="Введіть вашу електронну адресу">
-//             <button type="submit">Надіслати</button>
-// </form>
-//
+//Розв'язок
 let form1 = document.createElement('form');
-form1.action = 'none';
+// form1.action = 'none';
 form1.method = 'GET';
 form1.style.display = 'flex';
 form1.style.flexWrap = 'wrap';
@@ -407,17 +395,28 @@ input1.style.display = 'flex';
 input1.style.maxWidth = '96%';
 //
 let button1 = document.createElement('button');
-// button1.style.width = '15%';
-// button1.style.height = '23px';
 button1.style.margin = '3px';
 button1.innerText = 'PRESS';
 button1.style.display = 'flex';
-button1.style.overflowWrap = 'breal-word';
+button1.style.overflowWrap = 'break-word';
+button1.type = 'button';
+//поки не знав про івент використовував власну функцію
+button1.onclick = removeFunc;
 //
 form1.append(input1, button1);
 document.body.appendChild(form1);
-// ClassText.appendChild(form1);
-// document.body.appendChild(form1);
+//
+//функція яка приховує або повертає прихований файл
+function removeFunc() {
+    // event.preventDefault();
+    if (input1.style.display === "none") {
+        input1.style.display = "flex";
+    } else {
+        input1.style.display = "none";
+        input1.value = "";
+    }
+    // form1.style.remove();
+}
 
 
 
@@ -425,6 +424,43 @@ document.body.appendChild(form1);
 // ==========================
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
+//
+let task8 = task7.cloneNode(true);
+task8.innerText = 'Task 8';
+document.body.appendChild(task8);
+//
+let form2 = document.createElement('form');
+form2.method = 'GET';
+form2.style.display = 'flex';
+form2.style.flexWrap = 'wrap';
+//
+let input2 = document.createElement('input');
+input2.type = 'number';
+input2.placeholder = 'Your age...';
+input2.style.margin = '3px';
+input2.style.display = 'flex';
+input2.style.maxWidth = '96%';
+//
+let button2 = document.createElement('button');
+button2.style.margin = '3px';
+button2.innerText = 'PRESS';
+button2.style.display = 'flex';
+button2.style.overflowWrap = 'break-word';
+button2.type = 'button';
+//поки не знав про івент метод використовував функцію власну
+button2.onclick = reviewFunc;
+//
+form2.append(input2, button2);
+document.body.appendChild(form2);
+//
+//функція для перевірки
+function reviewFunc() {
+    if (input2.value < 18) {
+        alert('Ваш вік менше 18 років!');
+    }
+    else confirm('Вce добре! Продовжуєм!');
+}
+
 
 
 
@@ -432,4 +468,11 @@ document.body.appendChild(form1);
 //============================
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
-// (Додатковачастина для завдання)
+// (Додаткова частина для завдання)
+//
+//
+let task9 = task7.cloneNode(true);
+task9.innerText = 'Task 9';
+document.body.appendChild(task9);
+//
+
