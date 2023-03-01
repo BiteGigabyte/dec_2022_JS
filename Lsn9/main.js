@@ -9,7 +9,7 @@ let task1 = document.createElement('h2');
 task1.innerText = 'Task 1';
 task1.style.fontSize = '33px';
 document.body.appendChild(task1);
-//
+//Розв'язок
 let block = document.createElement('div');
 block.classList.add('wrap', 'collapse', 'alpha', 'beta');
 block.innerText = 'This is my block';
@@ -40,7 +40,7 @@ task2.style.paddingTop = '20px';
 task2.style.clear = 'both';
 document.body.appendChild(task2);
 //
-let mass = ['Main','Products','About us','Contacts'];
+const mass = ['Main','Products','About us','Contacts'];
 //
 let ul = document.createElement('ul');
 document.body.appendChild(ul);
@@ -123,20 +123,20 @@ document.body.appendChild(task4);
 //Використовую і звертаюсь до масиву із минулого завдання він такий ж самий.
 //
 for(let i = 0; i < coursesAndDurationArray.length; ++i) {
-    let div = document.createElement('div');
+  let div = document.createElement('div');
     div.classList.add('item');
-    document.body.append(div);
-//
+    document.body.appendChild(div);
+    //
   let h1 = document.createElement('h1');
-  h1.classList.add('heading');
-  h1.innerText = `${coursesAndDurationArray[i]['title']}`;
+    h1.classList.add('heading');
+    h1.innerText = `${coursesAndDurationArray[i]['title']}`;
+  //
   let p = document.createElement('p');
     p.classList.add('description');
     p.innerText = `${coursesAndDurationArray[i]['monthDuration']}`;
 //
     div.append(h1, p);
 }
-//
 
 
 
@@ -211,7 +211,6 @@ for (const simpson of simpsons) {
     img.src = `${simpson[keys[4]]}`;
     div1.append(h2, h2a, p, img);
 }
-
 
 
 
@@ -300,6 +299,10 @@ let coursesArray = [
 ];
 //
 //Розв'язок
+//Не додавав flex для двох контейнерів з місяцями та днями
+//тому при зменшенні вони будуть зміщуватись вверх-вниз
+//хоча можна обгорнути ще в 1 div та застосувати flex.
+// Якщо все правильно думаю то НЕ поправляйте а інакше скажете і перероблю?
 for(let i = 0; i < coursesArray.length; ++i){
 let mainBlock = document.createElement('div');
     mainBlock.style.border = '2px solid red';
@@ -307,6 +310,9 @@ let mainBlock = document.createElement('div');
     mainBlock.style.padding = '11px 20px';
 let title = document.createElement('div')
     title.innerText = `${coursesArray[i]['title']}`;
+//чи можна цю команду використовувати?
+    title.style.wordWrap = 'break-word';
+    //
     title.style.fontWeight = 'bolder';
     title.style.fontSize = '27px';
     title.style.marginTop = '5px';
@@ -315,6 +321,9 @@ let title = document.createElement('div')
     title.style.padding = '3px';
 let month = document.createElement('div');
     month.innerText = `місяців: ${coursesArray[i]['monthDuration']}`;
+    //
+    month.style.wordWrap = 'break-word';
+    //
     month.style.fontWeight = 'bold';
     month.style.fontStyle = 'italic';
     month.style.border = '2px solid #106EBE';
@@ -342,6 +351,7 @@ let month = document.createElement('div');
         li.style.listStylePosition = 'inside';
         li.style.paddingLeft = '2%';
         li.style.marginRight = '2%';
+        li.style.marginTop = '0.5%';
         li.innerText = `${ulElement}`;
         ul.append(li);
     }
@@ -360,6 +370,16 @@ document.body.appendChild(mainBlock);
 //
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
+let task7 = task3.cloneNode(true);
+task7.innerText = 'Task 7';
+task7.style.background = 'none';
+document.body.appendChild(task7);
+//
+// let button =
+
+
+
+
 // ==========================
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
