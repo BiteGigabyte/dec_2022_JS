@@ -80,8 +80,7 @@ for (let i = 0; i <= 9; i++) {
     const email = `${name.toLowerCase()}.${surname.toLowerCase()}@${emails[Math.floor(Math.random() * emails.length)]}`;
     const phone = `+380-${Math.floor(Math.random() * 100000000 + 900000000)}`;
     const order = orders[Math.floor(Math.random() * orders.length)];
-    client[i] = new Client (
-        Math.floor(Math.random() * 9000000 + 1000000), name, surname, email, phone, order);
+    client[i] = new Client (Math.floor(Math.random() * 9000000 + 1000000), name, surname, email, phone, order);
 }
 //
 console.log(client);
@@ -281,4 +280,3 @@ console.log(cinderellas.find((princess) => {return princess['name'] === prince['
 
 console.log('');
 console.log('FINISH');
-
