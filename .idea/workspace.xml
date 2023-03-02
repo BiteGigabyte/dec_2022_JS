@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач." />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lsn9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lsn9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,13 +177,9 @@
       <workItem from="1677666869827" duration="9479000" />
       <workItem from="1677679726763" duration="17137000" />
       <workItem from="1677703285660" duration="14242000" />
-    </task>
-    <task id="LOCAL-00008" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
-      <created>1675261218166</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1675261218166</updated>
+      <workItem from="1677718484933" duration="10000" />
+      <workItem from="1677753590000" duration="2721000" />
+      <workItem from="1677756338239" duration="8581000" />
     </task>
     <task id="LOCAL-00009" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
       <created>1675261670549</created>
@@ -517,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677718472135</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
+      <created>1677718492230</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1677718492231</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

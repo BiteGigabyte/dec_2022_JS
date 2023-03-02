@@ -474,41 +474,83 @@ let task9 = task7.cloneNode(true);
 task9.innerText = 'Task 9';
 document.body.appendChild(task9);
 //
+let div = document.createElement('div');
+//
 let form3 = document.createElement('form');
 form3.style.display = 'flex';
+form3.style.flexWrap = 'wrap';
+form3.style.margin = '0 0 5% 0';
+//
 let input3 = document.createElement('input');
 input3.type = 'number';
 input3.placeholder = 'Rows...';
-let button3 = document.createElement('button');
-button3.type = 'button';
-button3.innerText = 'Confirm';
-form3.append(input3, button3);
-
-let form4 = document.createElement('form');
-form4.style.display = 'flex';
+input3.style.margin = '0px 1%';
+input3.style.height = '3vh';
+input3.style.flexGrow = '3';
+//
 let input4 = document.createElement('input');
 input4.type = 'number';
 input4.placeholder = 'Columns...';
-let button4 = document.createElement('button');
-button4.type = 'button';
-button4.innerText = 'Confirm';
-form4.append(input4, button4);
-
-let form5 = document.createElement('form');
-form5.style.display = 'flex';
+input4.style.margin = '0px 1%';
+input4.style.height = '3vh';
+input4.style.flexGrow = '3';
+//
 let input5 = document.createElement('input');
-// input5.type = 'number';
+input5.type = 'text';
 input5.placeholder = 'Сontent...';
-let button5 = document.createElement('button');
-button5.type = 'button';
-button5.innerText = 'Confirm';
-form5.append(input5, button5);
-
-
-
-
-
-
-document.body.append(form3, form4, form5);
-
+input5.style.margin = '0px 1%';
+input5.style.height = '3vh';
+input5.style.flexGrow = '3';
+//
+let button3 = document.createElement('button');
+button3.type = 'button';
+button3.innerText = 'Confirm';
+button3.style.margin = '1% 1% 0 1%';
+button3.style.height = '5vh';
+button3.style.flexBasis = '100%';
+button3.addEventListener('click', () => {
+    //
+    const rows = input3.value;
+    const columns = input4.value;
+    const contents = input5.value;
+if (columns > 0 && rows > 0)
+{
+    let table = document.createElement('table');
+    for (let i = 0; i < rows; ++i) {
+        let tr = document.createElement('tr');
+        tr.style.background = 'white';
+        tr.style.border = '1px solid black';
+        table.appendChild(tr);
+        for (let j = 0; j < columns; ++j) {
+            let td = document.createElement('td');
+            td.innerText = `${contents}`;
+            td.style.background = 'white';
+            td.style.border = '1px solid black';
+            td.style.overflowWrap = 'break-word';
+            td.style.padding = '10px';
+            input3.value = '';
+            input4.value = '';
+            input5.value = '';
+            tr.appendChild(td);
+        }
+    }
+    table.style.background = 'black';
+    table.style.border = '2px solid black';
+    document.body.appendChild(table);
+    //
+    button3.style.backgroundColor = 'green';
+    setTimeout(() => {
+        button3.style.backgroundColor = '';
+    }, 1500);
+    //
+} else {
+    button3.style.backgroundColor = 'red';
+    setTimeout(() => {
+        button3.style.backgroundColor = '';
+    }, 1500);
+}
+});
+//
+form3.append(input3, input4, input5, button3);
+document.body.append(form3);
 
