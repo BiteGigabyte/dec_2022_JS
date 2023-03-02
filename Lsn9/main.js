@@ -474,4 +474,41 @@ let task9 = task7.cloneNode(true);
 task9.innerText = 'Task 9';
 document.body.appendChild(task9);
 //
+let form3 = document.createElement('form');
+form3.style.display = 'flex';
+let input3 = document.createElement('input');
+input3.type = 'number';
+input3.placeholder = 'Rows...';
+let button3 = document.createElement('button');
+button3.type = 'button';
+button3.innerText = 'Confirm';
+form3.append(input3, button3);
+
+let form4 = document.createElement('form');
+form4.style.display = 'flex';
+let input4 = document.createElement('input');
+input4.type = 'number';
+input4.placeholder = 'Columns...';
+let button4 = document.createElement('button');
+button4.type = 'button';
+button4.innerText = 'Confirm';
+form4.append(input4, button4);
+
+let form5 = document.createElement('form');
+form5.style.display = 'flex';
+let input5 = document.createElement('input');
+// input5.type = 'number';
+input5.placeholder = 'Сontent...';
+let button5 = document.createElement('button');
+button5.type = 'button';
+button5.innerText = 'Confirm';
+form5.append(input5, button5);
+
+
+
+
+
+
+document.body.append(form3, form4, form5);
+
 

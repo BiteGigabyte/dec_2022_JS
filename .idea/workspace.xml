@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/main.js" afterDir="false" />
     </list>
@@ -175,21 +175,7 @@
       <workItem from="1677653088071" duration="10122000" />
       <workItem from="1677666869827" duration="9479000" />
       <workItem from="1677679726763" duration="17137000" />
-      <workItem from="1677703285660" duration="11152000" />
-    </task>
-    <task id="LOCAL-00005" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу.">
-      <created>1675259681966</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1675259681966</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
-      <created>1675260430833</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1675260430833</updated>
+      <workItem from="1677703285660" duration="14231000" />
     </task>
     <task id="LOCAL-00007" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
       <created>1675261144477</created>
@@ -520,14 +506,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677707481957</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач.">
+      <created>1677714940808</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1677714940808</updated>
+    </task>
+    <task id="LOCAL-00055" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
+      <created>1677714957498</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677714957499</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання. Є відсотків десь 70-75% готово." />
     <MESSAGE value="JS домашнє завдання 2. Готово." />
     <MESSAGE value="JS домашнє завдання 2. Готово.&#10;&#10;- забрав лапки з коду.&#10;-" />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком" />
@@ -552,6 +551,7 @@
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач." />
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач." />
     <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач." />
+    <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач." />
   </component>
 </project>
