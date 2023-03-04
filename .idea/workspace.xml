@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач.">
+      <change afterPath="$PROJECT_DIR$/Lsn10/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn10/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn10/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn10/session.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn10/task2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn10/task3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec-2022_Perun/Html_Css_Lsn3/card2/main.css&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/Lessons HTML/Html_Css_Lection2/index.html&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -107,7 +111,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn9/index.html" useBuiltInWebServerPort="true">
+    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn10/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
   </component>
@@ -179,21 +183,11 @@
       <workItem from="1677703285660" duration="14242000" />
       <workItem from="1677718484933" duration="10000" />
       <workItem from="1677753590000" duration="2721000" />
-      <workItem from="1677756338239" duration="8581000" />
-    </task>
-    <task id="LOCAL-00009" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String">
-      <created>1675261670549</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1675261670549</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master">
-      <created>1675261777323</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1675261777323</updated>
+      <workItem from="1677756338239" duration="8745000" />
+      <workItem from="1677771287718" duration="95000" />
+      <workItem from="1677791303393" duration="4374000" />
+      <workItem from="1677858295570" duration="30454000" />
+      <workItem from="1677902776369" duration="1108000" />
     </task>
     <task id="LOCAL-00011" summary="Завершив завдання уроку 1 по JavaScript/&#10;Робив не довго десь годину, але поправок не бачу. &#10;- Виправив і видалив String&#10;- Видалив гілку origin/master">
       <created>1675262200329</created>
@@ -524,15 +518,38 @@
       <option name="project" value="LOCAL" />
       <updated>1677718492231</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 9/9 задач.">
+      <created>1677765997621</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1677765997621</updated>
+    </task>
+    <task id="LOCAL-00059" summary="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач.">
+      <created>1677766027629</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1677766027629</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 2. Готово." />
-    <MESSAGE value="JS домашнє завдання 2. Готово.&#10;&#10;- забрав лапки з коду.&#10;-" />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком" />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків десь 60%." />
     <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%." />
@@ -556,6 +573,8 @@
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач." />
     <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач." />
     <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач." />
+    <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 9/9 задач." />
+    <MESSAGE value="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач." />
   </component>
 </project>

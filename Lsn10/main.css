@@ -1,0 +1,53 @@
+#my-form1 {
+    padding: 2%;
+}
+
+.input1 {
+    display: block;
+}
+
+.input_div {
+    display: inline-block;
+}
+
+
+#number2 {
+    /*width: 10%;*/
+    font-size: 5em;
+    text-align: center;
+    /*padding: 3%;*/
+    border: 4px solid limegreen;
+    box-sizing: border-box;
+    display: inline;
+}
+
+#refresh-button2 {
+    margin-top: 3%;
+    padding: 1%;
+    overflow-wrap: break-word;
+}
+
+.bold2 {
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.input3 {
+    margin: 3%;
+    font-size: 40px;
+    border: 2px solid black;
+}
+
+.mainBlock3 {
+    margin: 2%;
+    border: 2px solid black;
+    /*padding: 4%;*/
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.p3 {
+    margin: 0;
+    padding: 3%;
+    border: 2px solid black;
+}
