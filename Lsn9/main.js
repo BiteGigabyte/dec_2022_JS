@@ -543,6 +543,8 @@ if (columns > 0 && rows > 0)
         button3.style.backgroundColor = '';
     }, 1500);
     //
+    table.scrollIntoView({behavior: 'smooth'});
+    //
 } else {
     button3.style.backgroundColor = 'red';
     setTimeout(() => {

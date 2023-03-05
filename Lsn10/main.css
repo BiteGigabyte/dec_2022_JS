@@ -1,14 +1,21 @@
+
+
 /*задача 1*/
 #my-form1 {
     padding: 2%;
+    font-size: 140%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .input1 {
     display: block;
+    height: 40px;
 }
 
 .input_div {
     display: inline-block;
+    margin: 0% 1%;
 }
 
 a {
@@ -18,6 +25,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+#submit-form1 {
+width: 130px;
+    margin-left: 1%;
+}
+
+
 
 /*задача 2*/
 #number2 {
@@ -39,6 +54,12 @@ a:hover {
     box-sizing: border-box;
 }
 
+#clear-button2 {
+    display: block;
+    margin: 3%;
+    padding: 1%;
+}
+
 
 /*задача 3*/
 .input3 {
@@ -50,7 +71,6 @@ a:hover {
 .mainBlock3 {
     margin: 2%;
     border: 2px solid black;
-    /*padding: 4%;*/
     display: inline-block;
     box-sizing: border-box;
 }
@@ -67,13 +87,13 @@ a:hover {
     font-size: 26px;
     box-sizing: content-box;
     border: 1px solid black;
+    display: block;
 
 }
 .input4 {
     border: 1px solid black;
     margin: 4% 7% 1% 4%;
     padding: 3% 7% 3% 7%;
-    /*float: right;*/
     font-size: 80px;
     box-sizing: border-box;
 }
@@ -85,12 +105,40 @@ a:hover {
 
 
 
+/*задача 5*/
+#form5 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 0% 5% 0%;
+}
 
+.input5 {
+    margin: 0px 1%;
+    height: 7vh;
+    flex-grow: 3;
+}
+
+#button5 {
+    margin: 1% 1% 0% 1%;
+    height: 13vh;
+    flex-basis: 100%;
+}
+
+
+
+/*додаткові одиничні стилі*/
+/**/
+/**/
+/*Стиль для заголовків задач які починаю*/
+.Tasks {
+    font-size: 300%;
+}
 
 
 /*відступи для параграфів 2 і 3 задач.*/
 .paddingLeft {
     padding-left: 3%;
+    font-size: 2em;
 }
 
 
@@ -99,8 +147,3 @@ a {
     color: #0434fc;
 }
 
-
-
-
-
-/*++++++++++++++++++++++++зробити щоб сторінка опускалась*/

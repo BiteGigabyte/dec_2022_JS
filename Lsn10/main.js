@@ -1,7 +1,7 @@
-// =======================================================
-// Стоврити форму з трьома полями для name,surname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
-//
-//
+
+
+
+// Створити форму з трьома полями для name,surname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
 //
 //
 const form1 = document.getElementById('my-form1');
@@ -11,30 +11,26 @@ const output1 = document.getElementById('output1');
 //
 submitButton.addEventListener('click', function(event) {
     event.preventDefault(); // Зупиняємо відправку форми на сервер
-
+//
     const name1 = document.getElementById('name1').value;
     const surname1 = document.getElementById('surname1').value;
-    // const age1 = document.getElementById('age1').value;
     const age1 = document.getElementById('age1').value;
-
-    // const message = `Ім'я: ${name1}\nПрізвище: ${surname1}\nНомер телефону: ${age1}`;
-    //output1.innerHTML = `<p>${message}</p>`;
     output1.innerHTML = `<p><u>Ім'я:</u> ${name1}</p>\n<p><u>Прізвище:</u> ${surname1}</p>\n<p><u>Номер телефону:</u> ${age1}</p>`;
-    // output1.innerText = 'asdASDA';
-    // console.log('asdfasd');
     output1.style.border = '2px solid black';
     output1.style.padding = '2%';
 });
 }
-//
-
-
-
-
-
 // ===========================
+
+
+
+
+
 // є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+//
+//
 const refreshButton = document.getElementById('refresh-button2');
+const clearButton = document.getElementById('clear-button2');
 if (refreshButton) {
     const bold2 = document.getElementById('bold2');
     if (localStorage.getItem('number')) {
@@ -50,19 +46,26 @@ refreshButton.addEventListener('click', function() {
     location.reload();
 });
 }
-
-
-
-
-
-
-
-
+if (clearButton) {
+clearButton.addEventListener('click', function() {
+    const bold2 = document.getElementById('bold2');
+    localStorage.clear();
+    bold2.innerText = '0';
+});
+}
 // ==========================
+
+
+
+
+
+
+
+
 // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховище, в масив sessions зберігається інформація про дату та час відвідування сторінки.
 // Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію
 //
-// МОЯ СТОРІНКА index.html для мого завдання буде мати назву task3.html, для іншої sessions.html
+// МОЯ 1 СТОРІНКА index.html для мого завдання буде мати назву task3.html, для другої sessions.html
 //
 //
 const script3 = document.getElementById('script3');
@@ -80,8 +83,6 @@ if(script3) {
 //
     localStorage.setItem('sessions', JSON.stringify(sessions));
 }
-//
-//
 //
 //
 const session3 = document.getElementById('session3');
@@ -107,15 +108,14 @@ if (session3) {
     //
     document.body.appendChild(mainBlock3);
 }
-
-
-
-
-
-
-
-
 // =========================
+
+
+
+
+
+
+
 //     зробити масив на 100 об'єктів та дві кнопки prev next
 // при завантаженні сторінки з'являються перші 10 об'єктів.
 //     При натисканні next виводяться наступні 10 об'єктів.
@@ -155,7 +155,7 @@ for (let i = 0; i < c; i++) {
 // Створив користувачів. Вивів в консоль весь згенерований масив щоб перевірити чи дані виводяться коректно.
     let users = user(100);
     console.log(users);
-    //
+    //Описую умову
         let startIndex = 0;
         for(let i4 = 0; i4 < 10; ++i4) {
     let div4data = document.createElement('div');
@@ -181,8 +181,6 @@ for (let i = 0; i < c; i++) {
         div4.append(input4_Prev, inpu4_Next);
         //
         inpu4_Next.addEventListener('click', function () {
-            // e.preventDefault();
-            // inpu4_Next = document.createElement('input');inpu4_Next.className = 'input4'.type = 'button'.value = 'Next';
             startIndex += 10;
             if (startIndex >= 100) startIndex = 0;
             for (let i4 = startIndex, i = 0; i4 < startIndex+10; ++i4, ++i) {
@@ -190,12 +188,9 @@ for (let i = 0; i < c; i++) {
                 const keys = Object.keys(users[i4]);
                 div4class[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
             }
-        //        startIndex += 10;
         })
         //
         input4_Prev.addEventListener('click', function () {
-            // e.preventDefault();
-            // input4_Prev = document.createElement('input').className = 'input4'.type = 'button'.value = 'Prev';
             //
             startIndex -= 10;
             if (startIndex <= 0) startIndex = 90;
@@ -205,18 +200,19 @@ for (let i = 0; i < c; i++) {
                 div4class[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
             }
         })
-        //
-        //
     document.body.appendChild(div4);
-    // }
 }
-
-
-
-
-
-
 // =======================================
+
+
+
+
+
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додаткова частина для завдання)
+//
+//
+// Описав цю задачу в тегу <script></script> в файлі index.html тому що код в html мав відповідну послідовність. Далі працював там.
+//
+//
