@@ -183,13 +183,14 @@ for (let i = 0; i < c; i++) {
         inpu4_Next.addEventListener('click', function () {
             // e.preventDefault();
             // inpu4_Next = document.createElement('input');inpu4_Next.className = 'input4'.type = 'button'.value = 'Next';
+            startIndex += 10;
             if (startIndex >= 100) startIndex = 0;
             for (let i4 = startIndex, i = 0; i4 < startIndex+10; ++i4, ++i) {
                 let div4class = document.getElementsByClassName('div4data');
                 const keys = Object.keys(users[i4]);
                 div4class[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
             }
-                startIndex += 10;
+        //        startIndex += 10;
         })
         //
         input4_Prev.addEventListener('click', function () {

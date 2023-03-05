@@ -185,14 +185,7 @@
       <workItem from="1677902776369" duration="3541000" />
       <workItem from="1677907103039" duration="1000" />
       <workItem from="1677907118159" duration="6460000" />
-      <workItem from="1677913652602" duration="20969000" />
-    </task>
-    <task id="LOCAL-00013" summary="Почав робити домашнє завдання. Є відсотків десь 10-15% готово.">
-      <created>1675428617206</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1675428617206</updated>
+      <workItem from="1677913652602" duration="22422000" />
     </task>
     <task id="LOCAL-00014" summary="JS домашнє завдання. Є відсотків десь 70-75% готово.">
       <created>1675465040566</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677940248806</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач.&#10;(Але в 4 кнопка деколи спрацьовує з 2 кліку)">
+      <created>1678003434440</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1678003434440</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
