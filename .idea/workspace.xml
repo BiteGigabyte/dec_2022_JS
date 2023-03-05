@@ -7,11 +7,6 @@
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/task2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/task2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn9/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +185,9 @@
       <workItem from="1677902776369" duration="3541000" />
       <workItem from="1677907103039" duration="1000" />
       <workItem from="1677907118159" duration="6460000" />
-      <workItem from="1677913652602" duration="38095000" />
-    </task>
-    <task id="LOCAL-00016" summary="JS домашнє завдання 2. Готово.&#10;&#10;- забрав лапки з коду.&#10;-">
-      <created>1675662958331</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1675662958331</updated>
+      <workItem from="1677913652602" duration="38344000" />
+      <workItem from="1678030481361" duration="1000" />
+      <workItem from="1678031763347" duration="777000" />
     </task>
     <task id="LOCAL-00017" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком">
       <created>1675753130991</created>
@@ -535,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678007124964</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює">
+      <created>1678030235544</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1678030235544</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
