@@ -187,14 +187,7 @@
       <workItem from="1677907118159" duration="6460000" />
       <workItem from="1677913652602" duration="38344000" />
       <workItem from="1678030481361" duration="1000" />
-      <workItem from="1678031763347" duration="777000" />
-    </task>
-    <task id="LOCAL-00017" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком">
-      <created>1675753130991</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1675753130991</updated>
+      <workItem from="1678031763347" duration="946000" />
     </task>
     <task id="LOCAL-00018" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- щось може напишу перед уроком">
       <created>1675816026790</created>
@@ -532,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678030235544</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює">
+      <created>1678032561187</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1678032561187</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
