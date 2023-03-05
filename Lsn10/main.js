@@ -156,61 +156,58 @@ for (let i = 0; i < c; i++) {
     let users = user(100);
     console.log(users);
     //
-    let div4 = document.getElementById('div4');
-    if (div4) {
         let startIndex = 0;
         for(let i4 = 0; i4 < 10; ++i4) {
-        let div4data = document.createElement('div');
-        // div4data.className = `div4data${i4 + 1}`;
+    let div4data = document.createElement('div');
         div4data.className = `div4data`;
         const keys = Object.keys(users[i4]);
             div4data.innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
-            // div4data.style.border = '1px solid black';
             div4data.style.borderBottom = '1px solid black';
             div4data.style.paddingLeft = '1%';
-            div4.appendChild(div4data);
+        div4.appendChild(div4data);
             startIndex = 10;
         }
         //
-        let input4_Prev = document.createElement('input');
+    let input4_Prev = document.createElement('input');
         input4_Prev.className = 'input4';
         input4_Prev.type = 'button';
         input4_Prev.value = 'Prev';
         //
-        let inpu4_Next = document.createElement('input');
+    let inpu4_Next = document.createElement('input');
         inpu4_Next.className = 'input4';
         inpu4_Next.type = 'button';
         inpu4_Next.value = 'Next';
         //
         div4.append(input4_Prev, inpu4_Next);
         //
-        inpu4_Next.addEventListener('click', function (e) {
-            e.preventDefault();
-
+        inpu4_Next.addEventListener('click', function () {
+            // e.preventDefault();
+            // inpu4_Next = document.createElement('input');inpu4_Next.className = 'input4'.type = 'button'.value = 'Next';
             if (startIndex >= 100) startIndex = 0;
             for (let i4 = startIndex, i = 0; i4 < startIndex+10; ++i4, ++i) {
-                let div4data = document.getElementsByClassName('div4data');
+                let div4class = document.getElementsByClassName('div4data');
                 const keys = Object.keys(users[i4]);
-                div4data[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
+                div4class[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
             }
                 startIndex += 10;
         })
         //
-        input4_Prev.addEventListener('click', function (e) {
-            e.preventDefault();
-
+        input4_Prev.addEventListener('click', function () {
+            // e.preventDefault();
+            // input4_Prev = document.createElement('input').className = 'input4'.type = 'button'.value = 'Prev';
+            //
             startIndex -= 10;
             if (startIndex <= 0) startIndex = 90;
             for (let i4 = startIndex, i = 0; i4 < startIndex+10; ++i4, ++i) {
-                let div4data = document.getElementsByClassName('div4data');
+                let div4class = document.getElementsByClassName('div4data');
                 const keys = Object.keys(users[i4]);
-                div4data[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
+                div4class[i].innerHTML = ` <b style="border: 1px solid black; border-radius: 5px;">${i4 + 1}</b> of ${users.length} is - ${keys[0]}: <b>${users[i4][keys[0]]}</b>, ${keys[1]}: <b>${users[i4][keys[1]]}</b>, ${keys[2]}: <b>${users[i4][keys[2]]}</b>, ${keys[3]}: <b>${users[i4][keys[3]]}</b>, ${keys[4]}: <b>${users[i4][keys[4]]}</b>`;
             }
         })
         //
         //
     document.body.appendChild(div4);
-    }
+    // }
 }
 
 

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 3/5 задач.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач.&#10;(Але в 4 кнопка деколи спрацьовує з 2 кліку)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lsn10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,14 +185,7 @@
       <workItem from="1677902776369" duration="3541000" />
       <workItem from="1677907103039" duration="1000" />
       <workItem from="1677907118159" duration="6460000" />
-      <workItem from="1677913652602" duration="13529000" />
-    </task>
-    <task id="LOCAL-00012" summary="Почав робити домашнє завдання. Є відсотків десь 10-15% готово.">
-      <created>1675427167473</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1675427167473</updated>
+      <workItem from="1677913652602" duration="20969000" />
     </task>
     <task id="LOCAL-00013" summary="Почав робити домашнє завдання. Є відсотків десь 10-15% готово.">
       <created>1675428617206</created>
@@ -532,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677905274821</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач.&#10;(Але в 4 кнопка деколи спрацьовує з 2 кліку)">
+      <created>1677940248806</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1677940248806</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%." />
     <MESSAGE value="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 35%.&#10;- роблю далі." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 52%.&#10;- роблю далі." />
@@ -575,6 +572,7 @@
     <MESSAGE value="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач." />
     <MESSAGE value="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач." />
     <MESSAGE value="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 3/5 задач." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 3/5 задач." />
+    <MESSAGE value="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач.&#10;(Але в 4 кнопка деколи спрацьовує з 2 кліку)" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 10 в роботі)&#10;&#10;- Готово 4/5 задач.&#10;(Але в 4 кнопка деколи спрацьовує з 2 кліку)" />
   </component>
 </project>
