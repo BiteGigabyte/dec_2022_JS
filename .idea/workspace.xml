@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює&#10;&#10;Добавив лейбл чомусь казало що треба добавляти навіть пустий...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lsn10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn10/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,14 +186,7 @@
       <workItem from="1677907118159" duration="6460000" />
       <workItem from="1677913652602" duration="38344000" />
       <workItem from="1678030481361" duration="1000" />
-      <workItem from="1678031763347" duration="1928000" />
-    </task>
-    <task id="LOCAL-00019" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків десь 60%.">
-      <created>1675816058096</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1675816058096</updated>
+      <workItem from="1678031763347" duration="2599000" />
     </task>
     <task id="LOCAL-00020" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%.">
       <created>1675821165377</created>
@@ -532,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678032801506</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює&#10;&#10;Добавив лейбл чомусь казало що треба добавляти навіть пустий...">
+      <created>1678033799718</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1678033799718</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
