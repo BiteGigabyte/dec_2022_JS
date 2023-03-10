@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює&#10;&#10;Добавив лейбл чомусь казало що треба добавляти навіть пустий...">
+      <change afterPath="$PROJECT_DIR$/Lsn12/user-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lsn12/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,33 +81,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/Lessons HTML/Html_Css_Lection2/index.html&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/dec_2022_JS/Lsn12/users.html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yurii\IdeaProjects\dec_2022_JS\Lsn8" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn10/index.html" useBuiltInWebServerPort="true">
+    <configuration name="JS_Lessons" type="JavascriptDebugType" uri="http://localhost:63342/dec_2022_JS/Lsn12/users.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
   </component>
@@ -187,13 +189,18 @@
       <workItem from="1677913652602" duration="38344000" />
       <workItem from="1678030481361" duration="1000" />
       <workItem from="1678031763347" duration="2599000" />
-    </task>
-    <task id="LOCAL-00020" summary="JS домашнє завдання 3.&#10;&#10;- створив файли.&#10;- подивився превью.&#10;- готово відсотків 85%.">
-      <created>1675821165377</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1675821165377</updated>
+      <workItem from="1678034629249" duration="1231000" />
+      <workItem from="1678051165643" duration="595000" />
+      <workItem from="1678054983156" duration="1009000" />
+      <workItem from="1678096816450" duration="1893000" />
+      <workItem from="1678100082001" duration="1374000" />
+      <workItem from="1678102522948" duration="1237000" />
+      <workItem from="1678170050087" duration="1452000" />
+      <workItem from="1678177251940" duration="1452000" />
+      <workItem from="1678310432409" duration="444000" />
+      <workItem from="1678469852463" duration="9000" />
+      <workItem from="1678471020894" duration="4000" />
+      <workItem from="1678481258454" duration="7379000" />
     </task>
     <task id="LOCAL-00021" summary="JS домашнє завдання 3 завершено.&#10;&#10;- готово відсотків 100%.&#10;- буду дивитись превью до наступного уроку.">
       <created>1675861042098</created>
@@ -531,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678033799718</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює&#10;&#10;Добавив лейбл чомусь казало що треба добавляти навіть пустий...">
+      <created>1678034652532</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1678034652533</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

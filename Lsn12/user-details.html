@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lsn12_JS(auxiliary)</title>
+</head>
+<body>
+<div id="auxiliary-div">
+
+</div>
+
+<script>
+    // let xz = [[33, 'asdfa', 11, 'gtgtg'], [34, 55, 'asdf', 'GAFSGA'], {asd: 'dadada', dsa: 'adadad'}];
+    // console.log(typeof xz[0], typeof xz[2]);
+    // console.log(Object.keys(xz));
+
+    let url2 = new URL(`${location.href}`);
+    let url1 = new URL (`https://jsonplaceholder.typicode.com/users/${JSON.parse(url2.searchParams.get('id'))}`);
+
+    let auxiliary_div = document.getElementById('auxiliary-div');
+    // let x;
+fetch(url1)
+    .then(value => value.json())
+    .then(value => {
+        // console.log(value.length);
+        let output = function (value) {
+        let value_keys = Object.keys(value);
+        // console.log(value_keys.length);
+        for (let i = 0; i < value_keys.length; ++i) {
+        let user_h2 = document.createElement('h2');
+        if (typeof value[value_keys[i]] !== 'object')
+        {
+        user_h2.innerText = `${value_keys[i]}: ${value[value_keys[i]]}`;
+            auxiliary_div.appendChild(user_h2);
+        }
+        else {
+            user_h2.innerText = `${value_keys[i]}:`;
+            auxiliary_div.appendChild(user_h2);
+            let value0 = value[value_keys[i]];
+            output(value0);
+        }
+        }
+        }
+        output(value);
+    });
+
+    //
+    // let x1 = JSON.parse(x);
+
+    // console.log(x);
+    //
+    // console.log(url);
+</script>
+
+</body>
+</html>

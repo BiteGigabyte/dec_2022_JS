@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lsn12_JS</title>
+</head>
+<body>
+
+<div id="users-div">
+
+</div>
+
+<script>
+    let url = new URL('http://jsonplaceholder.typicode.com/users');
+    let users_div = document.getElementById('users-div');
+    let ul = document.createElement('ul');
+    fetch(url)
+        .then(users => users.json())
+        .then(users => {
+            for (const user of users) {
+                let li = document.createElement('li');
+                li.innerHTML = `<a href="user-details.html?id=${user['id']}" target="_blank"> ${user['id']}: ${user['name']}</a>`;
+                ul.appendChild(li);
+            }
+            users_div.appendChild(ul);
+        });
+</script>
+
+</body>
+</html>
