@@ -8,42 +8,73 @@
     <title>Project_JS</title>
 </head>
 <body>
-
+<!--В index.html-->
+<!--1 отримати масив об'єктів з endpoint`а https://jsonplaceholder.typicode.com/users-->
+<!--2 Вивести id,name всіх user в index.html. Окремий блок для кожного user.-->
+<!--3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html, котра має детальну інфорацію про об'єкт на який клікнули-->
+<!---->
+<!---->
 <div id="mainDiv_index">
 
 </div>
-
-
+<!---->
+<!---->
 <script>
-let users = new URL('http://jsonplaceholder.typicode.com/users');
+    let users = new URL('https://jsonplaceholder.typicode.com/users');
     //
     fetch(users)
-    .then(user => user.json())
-    .then(user => {
-        let mainDiv_index = document.getElementById('mainDiv_index');
-        let detailH3_head = document.createElement('h2');
-        //
+        .then(user => user.json())
+        .then(user => {
+            let mainDiv_index = document.getElementById('mainDiv_index');
+            //
+            let headDiv_index = document.createElement('div');
+            let detail1H2_head = document.createElement('h2');
+            let detail2H2_head = document.createElement('h2');
+            //
             const user1_keys = Object.keys(user[0]);
-            detailH3_head.innerText = `  ${user1_keys[0]}:      ${user1_keys[1]} `;
-            mainDiv_index.appendChild(detailH3_head);
-        //
-        for (const user1 of user) {
-            let detailH3_index = document.createElement('h3');
-            let buttonH3_index = document.createElement('input');
-            let linkH3_index = document.createElement('a');
+            detail1H2_head.innerText = `  ${user1_keys[1]}`;
+            detail2H2_head.innerText = `  ${user1_keys[1]}`;
+            // mainDiv_index.append(detail1H2_head, detail2H2_head);
+            headDiv_index.append(detail1H2_head, detail2H2_head);
+            mainDiv_index.appendChild(headDiv_index);
             //
-            detailH3_index.innerText = `${user1[user1_keys[0]]}: ${user1[user1_keys[1]]}`;
-            buttonH3_index.type = 'button';
-            buttonH3_index.value = 'User details';
-            linkH3_index.href = `user-details.html?id=${user1[user1_keys[0]]}`;
-            linkH3_index.target = '_blank';
-            //
-            linkH3_index.appendChild(buttonH3_index);
-            mainDiv_index.append(detailH3_index, linkH3_index);
-        }
-    });
-
-
+            for (const user1 of user) {
+                let twiceDiv_index = document.createElement('div');
+                let detailH3_index = document.createElement('h3');
+                let buttonH3_index = document.createElement('input');
+                let linkH3_index = document.createElement('a');
+                //
+                headDiv_index.className = 'headDiv-index';
+                detail1H2_head.className = 'headH2-index';
+                detail2H2_head.className = 'headH2-index';
+                twiceDiv_index.className = 'twiceDiv-index';
+                detailH3_index.className = 'index-h3';
+                buttonH3_index.className = 'index-input';
+                linkH3_index.className = 'index-a';
+                //
+                detailH3_index.innerText = `${user1[user1_keys[1]]}`;
+                buttonH3_index.type = 'button';
+                buttonH3_index.value = 'User details';
+                linkH3_index.href = `user-details.html?id=${user1[user1_keys[0]]}`;
+                linkH3_index.target = '_blank';
+                //
+                buttonH3_index.addEventListener('mouseenter', function() {
+                    buttonH3_index.style.backgroundColor = 'green';
+                });
+                buttonH3_index.addEventListener('mouseleave', function() {
+                    buttonH3_index.style.backgroundColor = '';
+                });
+                //
+                linkH3_index.appendChild(buttonH3_index);
+                twiceDiv_index.append(detailH3_index, linkH3_index);
+                mainDiv_index.append(twiceDiv_index);
+            }
+        });
+    //
 </script>
+<!---->
+<link rel="stylesheet" href="main.css">
 </body>
 </html>
+
+

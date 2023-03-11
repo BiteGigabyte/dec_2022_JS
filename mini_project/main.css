@@ -1,0 +1,53 @@
+
+#mainDiv_index {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid cornflowerblue;
+}
+
+.headDiv-index {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.headH2-index {
+    width: 50%;
+    text-align: center;
+    min-width: 114px;
+}
+
+.twiceDiv-index {
+    width: 50%;
+    min-width: 114px;
+    border: 1px solid cornflowerblue;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+
+}
+
+.index-h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+
+}
+
+.index-input {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 8px;
+    width: 90%;
+    height: 25%;
+    background: aliceblue;
+}
+
+.index-a {
+    display: flex;
+    justify-content: center;
+}
