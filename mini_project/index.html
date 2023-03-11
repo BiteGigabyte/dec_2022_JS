@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project_JS</title>
+</head>
+<body>
+
+<div id="mainDiv_index">
+
+</div>
+
+
+<script>
+let users = new URL('https://jsonplaceholder.typicode.com/users');
+    //
+    fetch(users)
+    .then(user => user.json())
+    .then(user => {
+        let mainDiv_index = document.getElementById('mainDiv_index');
+        let detailH3_head = document.createElement('h2');
+        //
+            const user1_keys = Object.keys(user[0]);
+            detailH3_head.innerText = `  ${user1_keys[0]}:      ${user1_keys[1]} `;
+            mainDiv_index.appendChild(detailH3_head);
+        //
+        for (const user1 of user) {
+            let detailH3_index = document.createElement('h3');
+            let buttonH3_index = document.createElement('input');
+            let linkH3_index = document.createElement('a');
+            //
+            detailH3_index.innerText = `${user1[user1_keys[0]]}: ${user1[user1_keys[1]]}`;
+            buttonH3_index.type = 'button';
+            buttonH3_index.value = 'User details';
+            linkH3_index.href = `user-details.html?id=${user1[user1_keys[0]]}`;
+            linkH3_index.target = '_blank';
+            //
+            linkH3_index.appendChild(buttonH3_index);
+            mainDiv_index.append(detailH3_index, linkH3_index);
+        }
+    });
+
+
+</script>
+</body>
+</html>
