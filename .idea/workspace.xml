@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS домашнє завдання 12 завершив.&#10;&#10;- Готово! Все працює!&#10;+ Тільки стилі можна добавити (але думаю не принципово);">
-      <change afterPath="$PROJECT_DIR$/mini_project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 20-25% готово.&#10;&#10;- поки що пишу функціонал.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,26 +85,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/dec_2022_JS/mini_project/index.html",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yurii/IdeaProjects/dec_2022_JS/mini_project/index.html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yurii\IdeaProjects\dec_2022_JS\mini_project" />
@@ -206,14 +206,11 @@
       <workItem from="1678469852463" duration="9000" />
       <workItem from="1678471020894" duration="4000" />
       <workItem from="1678481258454" duration="9495000" />
-      <workItem from="1678511900612" duration="9447000" />
-    </task>
-    <task id="LOCAL-00023" summary="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 35%.&#10;- роблю далі.">
-      <created>1676229387492</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1676229387492</updated>
+      <workItem from="1678511900612" duration="9505000" />
+      <workItem from="1678530709391" duration="2000" />
+      <workItem from="1678536254477" duration="52000" />
+      <workItem from="1678541397935" duration="1000" />
+      <workItem from="1678546612597" duration="16335000" />
     </task>
     <task id="LOCAL-00024" summary="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 52%.&#10;- роблю далі.">
       <created>1676230826252</created>
@@ -551,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678489082429</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="JS працюю над міні проектом десь 20-25% готово.&#10;&#10;- поки що пишу функціонал.">
+      <created>1678530631474</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1678530631474</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 53%.&#10;- роблю далі." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 70%.&#10;- роблю далі." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 100-99.9%.&#10;- Зробив, роблю далі...&#10;&#10;Хотів б в останній задачці поексперементувати:&#10;-зробити через повертаючу функцію ввід даних про курс під час виклику функції.&#10;- і попробувати зробити через закриту функцію курси." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та провірив чи код працює бо було цікаво попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть." />
@@ -594,6 +597,7 @@
     <MESSAGE value="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює" />
     <MESSAGE value="JS домашнє завдання 10 завершив.&#10;&#10;- Готово 5/5 задач.&#10;Все працює&#10;&#10;Добавив лейбл чомусь казало що треба добавляти навіть пустий..." />
     <MESSAGE value="JS домашнє завдання 12 завершив.&#10;&#10;- Готово! Все працює!&#10;+ Тільки стилі можна добавити (але думаю не принципово);" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS домашнє завдання 12 завершив.&#10;&#10;- Готово! Все працює!&#10;+ Тільки стилі можна добавити (але думаю не принципово);" />
+    <MESSAGE value="JS працюю над міні проектом десь 20-25% готово.&#10;&#10;- поки що пишу функціонал." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS працюю над міні проектом десь 20-25% готово.&#10;&#10;- поки що пишу функціонал." />
   </component>
 </project>

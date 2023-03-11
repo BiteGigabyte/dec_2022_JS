@@ -13,15 +13,90 @@
 
 </div>
 
-
 <script>
-    // let detailsMain_div = document.getElementById('detailsMain_div');
-    let url = location.href;
-    let elementId = url.searchParams.get('id');
+    // На странице user-details.html:
+    // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
     //
-    console.log(elementId);
+    //
+    let userM = new URL(location.href);
+    const id = JSON.parse(userM.searchParams.get('id'));
+    let user = new URL ('https://jsonplaceholder.typicode.com/users');
+    fetch (user)
+    .then(value => value.json())
+        .then(value => {
+            let detailsMain_div = document.getElementById('detailsMain_div');
+        let userLog = function (valueUser) {
+            let keys2 = Object.keys(valueUser);
+            for (let i = 0; i < keys2.length; ++i)
+            {
+                if (typeof valueUser[keys2[i]] !== 'object') {
+                    let h2Main = document.createElement('h2');
+                    h2Main.innerHTML = `${keys2[i]}: ${valueUser[keys2[i]]}`;
+                    detailsMain_div.appendChild(h2Main);
+                } else {
+                    let h2Main = document.createElement('h2');
+                    h2Main.innerHTML = `   <u>${keys2[i]} is</u>:`;
+                    detailsMain_div.appendChild(h2Main);
+                    userLog(valueUser[keys2[i]]);
+                }
+            }
+            };
+            userLog(value[id]);
+        });
+</script>
 
 
+<!--// 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера-->
+<!--// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)-->
+<!---->
+<!---->
+<!--<a id="postsButton">-->
+    <input type="button" id="postsInput" value="post of current user">
+    <div id="titleDiv"></div>
+<!--</a>-->
+<!---->
+<script>
+    //
+const postsInput = document.getElementById('postsInput');
+let titleDiv = document.getElementById('titleDiv');
+//
+let postsUrl = new URL (location.href);
+    //
+let title = function (object) {
+    let titleKeys = Object.keys(object);
+    for (let i = 0; i < titleKeys.length; ++i) {
+        if (typeof object[titleKeys[i]] !== 'object' && titleKeys[i] === 'title') {
+            //
+            //
+    // 6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
+            //
+            //
+            let titleA = document.createElement('a');
+            titleA.href = `post-details.html?id=${JSON.parse(postsUrl.searchParams.get('id'))}`;
+            titleA.target = '_blank';
+            let titleH3 = document.createElement('h3');
+            titleH3.innerText = `${object[titleKeys[i]]}`;
+            titleA.appendChild(titleH3);
+            titleDiv.appendChild(titleA);
+        }
+        else if (typeof object[titleKeys[i]] === 'object') {
+            title(object[titleKeys[i]]);
+        }
+    }
+}
+//
+postsInput.addEventListener('click', function() {
+let postsId = postsUrl.searchParams.get('id');
+fetch(`https://jsonplaceholder.typicode.com/users/${postsId}/posts`)
+    .then(value => value.json())
+    .then(value => {
+        title(value);
+titleDiv.scrollIntoView({behavior: 'smooth'});
+    });
+});
+//
+//
+//
 </script>
 
 
