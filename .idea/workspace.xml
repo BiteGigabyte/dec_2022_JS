@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.&#10;- застилізував 2/3 файли.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,14 +211,7 @@
       <workItem from="1678546612597" duration="24288000" />
       <workItem from="1678574612633" duration="5244000" />
       <workItem from="1678579915622" duration="93000" />
-      <workItem from="1678611295322" duration="10897000" />
-    </task>
-    <task id="LOCAL-00029" summary="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та провірив чи код працює бо було цікаво попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть.">
-      <created>1676257078271</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1676257078271</updated>
+      <workItem from="1678611295322" duration="24908000" />
     </task>
     <task id="LOCAL-00030" summary="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та провірив чи код працює бо було цікаво попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть.">
       <created>1676257758597</created>
@@ -558,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678580003510</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.&#10;- застилізував 2/3 файли.">
+      <created>1678624115970</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1678624115970</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
