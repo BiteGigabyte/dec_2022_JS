@@ -60,12 +60,6 @@
     justify-content: center;
 }
 
-/**/
-@media screen and (max-width: 414px) {
-    .twiceDiv-index {
-        width: 100%;
-    }
-}
 
 
 
@@ -122,14 +116,19 @@
     background: darkorange;
     font-size: 130%;
 }
+#postDetailsDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .detailsDiv {
+    width: 100%;
     border: 2px solid darkorange;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1%;
     padding-left: 3%;
     background: lightgreen;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .postDetailsH4 {
@@ -137,11 +136,24 @@
     font-size: 120%;
 }
 
+.red-text {
+    color: #A03447;
+}
 
+.blue-text {
+    color: #AB529C;
+}
+/**/
+/**/
+@media screen and (max-width: 450px) {
+    .twiceDiv-index {
+        width: 100%;
+    }
 
-
-
-
+    .postDetailsH4 {
+        width: 100%;
+    }
+}
 
 
 

@@ -38,7 +38,7 @@
                         if(+object[objectKeys[i]] === +postUserId) {
                             for (let iC = 0; iC < objectKeys.length; ++iC) {
                                 let postH3 = document.createElement('h3');
-                                postH3.innerHTML = `<u>${objectKeys[iC]}</u>: ${object[objectKeys[iC]]}`;
+                                postH3.innerHTML = `<b><u>${objectKeys[iC]}:</u></b> <span class="blue-text">${object[objectKeys[iC]]}</span>`;
                                 postDiv.appendChild(postH3);
                                 //
                                 c = -1;
@@ -76,7 +76,8 @@
                     if (typeof getter[detailsKeys[i]] !== 'object') {
                         let postDetailsH4 = document.createElement('h4');
                         postDetailsH4.className = 'postDetailsH4';
-                        postDetailsH4.innerText = `${detailsKeys[i]}: \n${getter[detailsKeys[i]]}`;
+                        postDetailsH4.innerHTML = `<b><u>${detailsKeys[i]}:</u></b> <span class="red-text">${getter[detailsKeys[i]]}</span>`;
+                        console.log(postDetailsH4);
                         detailsDiv.appendChild(postDetailsH4);
                     } else {
                             getterDetails(getter[detailsKeys[i]]);
