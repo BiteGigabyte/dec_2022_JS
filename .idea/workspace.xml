@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS_12 Д/З готово.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="mini_project готовий.&#10;Дуже не стилізував...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,21 +218,7 @@
       <workItem from="1678579915622" duration="93000" />
       <workItem from="1678611295322" duration="32778000" />
       <workItem from="1678653379414" duration="8012000" />
-      <workItem from="1678661681191" duration="986000" />
-    </task>
-    <task id="LOCAL-00040" summary="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! 100%.&#10;- Доробив 11\11.">
-      <created>1677326680223</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1677326680223</updated>
-    </task>
-    <task id="LOCAL-00041" summary="JS домашнє завдання 8 in progress.">
-      <created>1677362636715</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1677362636715</updated>
+      <workItem from="1678661681191" duration="3672000" />
     </task>
     <task id="LOCAL-00042" summary="JS домашнє завдання 8 in progress.">
       <created>1677445832667</created>
@@ -562,7 +549,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678661356764</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="JS_12 Д/З готово.">
+      <created>1678662701828</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1678662701828</updated>
+    </task>
+    <task id="LOCAL-00090" summary="mini_project готовий.&#10;Дуже не стилізував...">
+      <created>1678662748776</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1678662748777</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 8 in progress." />
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач." />
     <MESSAGE value="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач." />
     <MESSAGE value="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач." />
@@ -605,6 +605,7 @@
     <MESSAGE value="JS працюю над міні проектом десь 100-99%% готово.&#10;&#10;- Функціонал готовий. &#10;- 3астилізував 3/3 файли." />
     <MESSAGE value="JS працюю над міні проектом десь 100-99% готово.&#10;&#10;- Функціонал готовий. &#10;- 3астилізував 3/3 файли." />
     <MESSAGE value="JS_12 Д/З готово." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS_12 Д/З готово." />
+    <MESSAGE value="mini_project готовий.&#10;Дуже не стилізував..." />
+    <option name="LAST_COMMIT_MESSAGE" value="mini_project готовий.&#10;Дуже не стилізував..." />
   </component>
 </project>

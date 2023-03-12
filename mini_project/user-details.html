@@ -25,25 +25,31 @@
     .then(value => value.json())
         .then(value => {
             let detailsMain_div = document.getElementById('detailsMain_div');
-        let userLog = function (valueUser) {
+        let userLog = function (valueUser, block, ...rest) {
             let keys2 = Object.keys(valueUser);
+            let userDiv = document.createElement('div');
+            if (rest.length) {
+                let h2Main1 = document.createElement('h2');
+                h2Main1.className = 'h2Main';
+                h2Main1.innerHTML = `<u>${rest}</u>:`;
+                userDiv.appendChild(h2Main1);
+            }
             for (let i = 0; i < keys2.length; ++i)
             {
+                    let h2Main = document.createElement('h2');
+                    h2Main.className = 'h2Main';
                 if (typeof valueUser[keys2[i]] !== 'object') {
-                    let h2Main = document.createElement('h2');
-                    h2Main.className = 'h2Main';
                     h2Main.innerHTML = `${keys2[i]}: ${valueUser[keys2[i]]}`;
-                    detailsMain_div.appendChild(h2Main);
+                    userDiv.appendChild(h2Main);
                 } else {
-                    let h2Main = document.createElement('h2');
-                    h2Main.className = 'h2Main';
-                    h2Main.innerHTML = `   <u>${keys2[i]} is</u>:`;
-                    detailsMain_div.appendChild(h2Main);
-                    userLog(valueUser[keys2[i]]);
+                    userLog(valueUser[keys2[i]], userDiv, keys2[i]);
                 }
             }
+            userDiv.style.paddingLeft = '20px';
+            userDiv.style.borderLeft = '2px solid cornflowerblue';
+            block.appendChild(userDiv);
             };
-            userLog(value[id -1]);
+            userLog(value[id -1], detailsMain_div);
         });
 </script>
 
