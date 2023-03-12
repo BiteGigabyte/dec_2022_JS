@@ -35,7 +35,7 @@
                     //
                     if (typeof object[objectKeys[i]] !== 'object') {
                         //
-                        if(+object[objectKeys[i]] === +postUserId) {
+                        if(+object['id'] === +postUserId) {
                             for (let iC = 0; iC < objectKeys.length; ++iC) {
                                 let postH3 = document.createElement('h3');
                                 postH3.innerHTML = `<b><u>${objectKeys[iC]}:</u></b> <span class="blue-text">${object[objectKeys[iC]]}</span>`;
