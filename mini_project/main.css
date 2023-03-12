@@ -116,6 +116,7 @@
     background: darkorange;
     font-size: 130%;
 }
+
 #postDetailsDiv {
     display: flex;
     flex-wrap: wrap;
