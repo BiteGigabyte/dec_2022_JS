@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 45-50% готово.&#10;&#10;- поки що пишу функціонал.">
-      <change afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,14 +210,8 @@
       <workItem from="1678530709391" duration="2000" />
       <workItem from="1678536254477" duration="52000" />
       <workItem from="1678541397935" duration="1000" />
-      <workItem from="1678546612597" duration="24275000" />
-    </task>
-    <task id="LOCAL-00025" summary="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 55%.&#10;- роблю далі.">
-      <created>1676230908613</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1676230908613</updated>
+      <workItem from="1678546612597" duration="24288000" />
+      <workItem from="1678574612633" duration="5125000" />
     </task>
     <task id="LOCAL-00026" summary="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 53%.&#10;- роблю далі.">
       <created>1676235033658</created>
@@ -555,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678564256114</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="JS працюю над міні проектом десь 65-70% готово.&#10;&#10;- поки що пишу функціонал.">
+      <created>1678573996317</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1678573996317</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,8 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- готово відсотків 100-99.9%.&#10;- Зробив, роблю далі...&#10;&#10;Хотів б в останній задачці поексперементувати:&#10;-зробити через повертаючу функцію ввід даних про курс під час виклику функції.&#10;- і попробувати зробити через закриту функцію курси." />
-    <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та провірив чи код працює бо було цікаво попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та переробив трохи параметри для функції&#10;попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 5завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
@@ -598,6 +597,8 @@
     <MESSAGE value="JS домашнє завдання 12 завершив.&#10;&#10;- Готово! Все працює!&#10;+ Тільки стилі можна добавити (але думаю не принципово);" />
     <MESSAGE value="JS працюю над міні проектом десь 20-25% готово.&#10;&#10;- поки що пишу функціонал." />
     <MESSAGE value="JS працюю над міні проектом десь 45-50% готово.&#10;&#10;- поки що пишу функціонал." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS працюю над міні проектом десь 45-50% готово.&#10;&#10;- поки що пишу функціонал." />
+    <MESSAGE value="JS працюю над міні проектом десь 65-70% готово.&#10;&#10;- поки що пишу функціонал." />
+    <MESSAGE value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал." />
   </component>
 </project>

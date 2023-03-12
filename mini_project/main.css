@@ -1,4 +1,5 @@
 
+/*Стилізація index.html сторінки*/
 #mainDiv_index {
     display: flex;
     flex-wrap: wrap;
@@ -51,3 +52,49 @@
     display: flex;
     justify-content: center;
 }
+
+
+
+
+/*Стидізація user-details.html*/
+#detailsMain_div {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid cornflowerblue;
+    padding: 5px 0 5px 15px;
+}
+
+.h2Main {
+    width: 100%;
+    margin: 0 3px 0 3px;
+}
+
+#postsInput {
+    width: 90%;
+    margin: 15px 5% 15px 5%;
+    padding: 10px;
+    font-size: 300%;
+    overflow-wrap: break-word;
+}
+
+#titleDiv {
+    border: 2px solid cornflowerblue;
+    border-top: 0;
+    padding: 17px;
+}
+
+.titleA {
+    text-decoration: none;
+}
+
+.titleA:hover {
+    text-decoration: underline;
+}
+
+.titleH3 {
+    margin: 0 3px 0 3px;
+    color: black;
+    font-size: 150%;
+    padding: 3px;
+}
+

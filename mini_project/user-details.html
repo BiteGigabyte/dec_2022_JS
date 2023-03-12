@@ -31,10 +31,12 @@
             {
                 if (typeof valueUser[keys2[i]] !== 'object') {
                     let h2Main = document.createElement('h2');
+                    h2Main.className = 'h2Main';
                     h2Main.innerHTML = `${keys2[i]}: ${valueUser[keys2[i]]}`;
                     detailsMain_div.appendChild(h2Main);
                 } else {
                     let h2Main = document.createElement('h2');
+                    h2Main.className = 'h2Main';
                     h2Main.innerHTML = `   <u>${keys2[i]} is</u>:`;
                     detailsMain_div.appendChild(h2Main);
                     userLog(valueUser[keys2[i]]);
@@ -50,34 +52,65 @@
 <!--// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)-->
 <!---->
 <!---->
-<!--<a id="postsButton">-->
-    <input type="button" id="postsInput" value="post of current user">
+<!---->
+    <input type="button" id="postsInput" value="posts of current user">
     <div id="titleDiv"></div>
-<!--</a>-->
 <!---->
 <script>
     //
 const postsInput = document.getElementById('postsInput');
+//
+    postsInput.addEventListener('mouseenter', function() {
+        postsInput.style.backgroundColor = 'cornflowerblue';
+    });
+    postsInput.addEventListener('mouseleave', function() {
+        postsInput.style.backgroundColor = '';
+    });
+//
 let titleDiv = document.getElementById('titleDiv');
 //
 let postsUrl = new URL (location.href);
+    //
+    //кожний 5 елемент роблю пробіл
+    let five = -1;
     //
 let title = function (object) {
     let titleKeys = Object.keys(object);
     for (let i = 0; i < titleKeys.length; ++i) {
         if (typeof object[titleKeys[i]] !== 'object' && titleKeys[i] === 'title') {
             //
-            //
     // 6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
             //
+            ++five;
             //
             let titleA = document.createElement('a');
+            titleA.className = 'titleA';
             titleA.href = `post-details.html?id=${JSON.parse(postsUrl.searchParams.get('id'))}`;
             titleA.target = '_blank';
             let titleH3 = document.createElement('h3');
-            titleH3.innerText = `${object[titleKeys[i]]}`;
+            //
+            titleH3.addEventListener('mouseenter', function() {
+                titleH3.style.backgroundColor = '#30A100';
+                titleH3.style.color = 'white';
+            });
+            titleH3.addEventListener('mouseleave', function() {
+                titleH3.style.backgroundColor = '';
+                titleH3.style.color = 'black';
+            });
+            //
+            titleH3.className = 'titleH3';
+            titleH3.innerText = `- ${object[titleKeys[i]]}`;
             titleA.appendChild(titleH3);
             titleDiv.appendChild(titleA);
+            //
+            if (five === 4) {
+                let br = document.createElement('br');
+                let title0H3 = document.createElement('h3');
+                title0H3.style.margin = '0';
+                title0H3.appendChild(br);
+                titleDiv.appendChild(title0H3);
+                five = -1;
+            }
         }
         else if (typeof object[titleKeys[i]] === 'object') {
             title(object[titleKeys[i]]);
@@ -96,9 +129,12 @@ titleDiv.scrollIntoView({behavior: 'smooth'});
 });
 //
 //
-//
 </script>
 
 
+
+<link rel="stylesheet" href="main.css">
+<!---->
+<!---->
 </body>
 </html>
