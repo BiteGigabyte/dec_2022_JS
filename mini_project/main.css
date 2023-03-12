@@ -56,7 +56,7 @@
 
 
 
-/*Стидізація user-details.html*/
+/*Стилізація user-details.html*/
 #detailsMain_div {
     display: flex;
     flex-wrap: wrap;
@@ -97,4 +97,12 @@
     font-size: 150%;
     padding: 3px;
 }
+
+
+
+
+/*Стилізація post-details.html сторінки*/
+
+
+
 
