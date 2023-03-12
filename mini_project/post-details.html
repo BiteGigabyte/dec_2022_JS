@@ -10,9 +10,46 @@
 <body>
 
 <!--На странице post-details.html:-->
-<!--7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .-->
-<!--8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)-->
 <!---->
+<div id="postDiv"></div>
+
+<script>
+    let postDiv = document.getElementById('postDiv');
+// 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
+    const thisPostUrl = new URL (location.href);
+    const postId = thisPostUrl.searchParams.get('id');
+    const postUrl = new URL (`https://jsonplaceholder.typicode.com/users/${postId}/posts`);
+    // console.log(postId);
+    fetch(postUrl)
+        .then (value => value.json())
+        .then (value => {
+
+            let postObject = function (object) {
+                const objectKeys = Object.keys(object);
+                for (let i = 0; i < objectKeys.length; ++i)
+                {
+                    if (typeof object[objectKeys[i]] !== 'object') {
+                        //
+                        // console.log(object[objectKeys[i]]);
+                        //
+                        let postH4 = document.createElement('h4');
+                        postH4.innerText = `${objectKeys[i]}: ${object[objectKeys[i]]}`;
+                        postDiv.appendChild(postH4);
+                    }
+                    else {
+                        postObject(object[objectKeys[i]]);
+                    }
+                }
+            }
+            // console.log(value);
+            postObject(value);
+    });
+
+// 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+    let postDetails = new URL (`https://jsonplaceholder.typicode.com/posts/${postId}/comments`);
+
+
+</script>
 
 
 <link rel="stylesheet" href="main.css">
