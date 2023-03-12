@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.&#10;- застилізував 2/3 файли.">
+    <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS працюю над міні проектом десь 85-90% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,21 +212,7 @@
       <workItem from="1678546612597" duration="24288000" />
       <workItem from="1678574612633" duration="5244000" />
       <workItem from="1678579915622" duration="93000" />
-      <workItem from="1678611295322" duration="24908000" />
-    </task>
-    <task id="LOCAL-00030" summary="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та провірив чи код працює бо було цікаво попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть.">
-      <created>1676257758597</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1676257758597</updated>
-    </task>
-    <task id="LOCAL-00031" summary="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та переробив трохи параметри для функції&#10;попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть.">
-      <created>1676379489810</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1676379489810</updated>
+      <workItem from="1678611295322" duration="28690000" />
     </task>
     <task id="LOCAL-00032" summary="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію та переробив трохи параметри для функції&#10;попрактикувати, але нижче є задача без замкнутої - якщо щось не так або якщо є лишнє то пишіть.">
       <created>1676379516167</created>
@@ -556,7 +543,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678624115970</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли.">
+      <created>1678639349087</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1678639349087</updated>
+    </task>
+    <task id="LOCAL-00080" summary="JS працюю над міні проектом десь 85-90% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли.">
+      <created>1678639377231</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1678639377231</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,8 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS домашнє завдання 4 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
-    <MESSAGE value="JS домашнє завдання 5завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 5 завершено.&#10;&#10;- Готово! відсотків 100%.&#10;- Останню задачу зробив через замикаючу функцію переробив вставив (let, = i =&gt; ta ;) зробив всі стрілочні сам код ніби доорий, але нижче є остання задача без замикаючої ф-ції - якщо щось не так або якщо є лишнє то пишіть." />
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 70%.&#10;- Доробляю 9\11" />
     <MESSAGE value="JS домашнє завдання 6 завершено.&#10;&#10;- Готово! відсотків 90%.&#10;- Доробляю 11\11" />
@@ -599,6 +598,8 @@
     <MESSAGE value="JS працюю над міні проектом десь 65-70% готово.&#10;&#10;- поки що пишу функціонал." />
     <MESSAGE value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал." />
     <MESSAGE value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.&#10;- застилізував 2/3 файли." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- поки що пишу функціонал.&#10;- застилізував 2/3 файли." />
+    <MESSAGE value="JS працюю над міні проектом десь 75-80% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли." />
+    <MESSAGE value="JS працюю над міні проектом десь 85-90% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS працюю над міні проектом десь 85-90% готово.&#10;&#10;- Функціонал готовий. Ще тільки застилізувати 3 документ.&#10;- застилізував 2/3 файли." />
   </component>
 </project>
