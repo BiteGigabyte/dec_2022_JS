@@ -22,12 +22,30 @@
         .then(users => {
             for (const user of users) {
                 let li = document.createElement('li');
-                li.innerHTML = `<a href="user-details.html?id=${user['id']}" target="_blank"> ${user['id']}: ${user['name']}</a>`;
+                li.className = 'usersLi';
+                li.innerHTML = `<a href="user-details.html?id=${user['id']}" class="liA" target="_blank"> ${user['id']}: ${user['name']}</a>`;
                 ul.appendChild(li);
             }
             users_div.appendChild(ul);
         });
 </script>
+
+<style>
+    body {
+        background: url(fone1.jpg);
+        background-size: cover;
+    }
+
+    .usersLi {
+        font-size: 200%;
+        color: cornflowerblue;
+        padding: 10px;
+    }
+    .liA {
+        color: white;
+    }
+
+</style>
 
 </body>
 </html>

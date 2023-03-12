@@ -22,6 +22,8 @@
     .then(value => value.json())
     .then(value => {
         let output = function (value) {
+        let detailsDiv = document.createElement('div');
+        detailsDiv.className = 'detailsDiv';
         let value_keys = Object.keys(value);
         for (let i = 0; i < value_keys.length; ++i) {
         let user_h2 = document.createElement('h2');
@@ -41,6 +43,16 @@
         output(value);
     });
 </script>
+
+
+<style>
+    body {
+        background-image: url(fone2.jpg);
+        background-size: cover;
+        color: white;
+    }
+</style>
+
 
 </body>
 </html>
