@@ -22,7 +22,6 @@
     .then(value => value.json())
     .then(value => {
         //
-
                 let output = function (value, block, ...rest) {
                 let value_keys = Object.keys(value);
                 let detailsDiv = document.createElement('div');
@@ -41,35 +40,15 @@
                 detailsDiv.appendChild(user_h2);
                 }
                 else {
-                    // user_h2.innerText = `${value_keys[i]}:`;
                     let value0 = value[value_keys[i]];
                     output(value0, detailsDiv, value_keys[i]);
                 }
+                    detailsDiv.style.paddingLeft = '20px';
+                    detailsDiv.style.borderLeft = '2px solid white';
                     block.appendChild(detailsDiv);
                 }
-                    // auxiliary_div.appendChild(detailsDiv);
                 }
-        /**/
-        // let output = function (value) {
-        // let value_keys = Object.keys(value);
-        // for (let i = 0; i < value_keys.length; ++i) {
-        // let detailsDiv = document.createElement('div');
-        // detailsDiv.className = 'detailsDiv';
-        // let user_h2 = document.createElement('h2');
-        //     user_h2.className = 'user_h2';
-        // if (typeof value[value_keys[i]] !== 'object')
-        // {
-        // user_h2.innerText = `${value_keys[i]}: ${value[value_keys[i]]}`;
-        //     auxiliary_div.appendChild(user_h2);
-        // }
-        // else {
-        //     user_h2.innerText = `${value_keys[i]}:`;
-        //     auxiliary_div.appendChild(user_h2);
-        //     let value0 = value[value_keys[i]];
-        //     output(value0);
-        // }
-        // }
-        // }
+                //
         output(value, auxiliary_div);
     });
 </script>
