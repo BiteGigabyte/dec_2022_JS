@@ -7,6 +7,10 @@
 /*Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
 
 
+body {
+    background-image: url(fone1.jpg);
+}
+
 
 
 /*Стилізація index.html сторінки*/
@@ -41,8 +45,9 @@
 .index-h3 {
     text-align: center;
     font-size: 130%;
-    overflow-wrap: break-word;
+    overflow: auto;
     hyphens: auto;
+    color: white;
 /*    */
 }
 
@@ -76,6 +81,7 @@
     width: 100%;
     margin: 0 3px 0 3px;
     overflow: auto;
+    color: white;
 }
 
 #postsInput {
@@ -113,9 +119,9 @@
 
 .titleH3 {
     margin: 0 3px 0 3px;
-    color: black;
     font-size: 150%;
     padding: 3px;
+    color: white;
 }
 
 .userDiv {
