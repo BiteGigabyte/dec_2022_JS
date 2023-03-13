@@ -185,6 +185,14 @@ body {
 /**/
 /**/
 @media screen and (max-width: 450px) {
+    .headH2-index {
+        width: 100%;
+    }
+
+    #headH2-index {
+        display: none;
+    }
+
     .twiceDiv-index {
         width: 100%;
     }
