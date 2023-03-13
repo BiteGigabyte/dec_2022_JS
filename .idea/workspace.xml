@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS_mini_project готовий.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +90,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/testing_JS",
+    "last_opened_file_path": "C:/Users/yurii/IdeaProjects/testing_JS/user-details.html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -226,13 +228,8 @@
       <workItem from="1678672060328" duration="2000" />
       <workItem from="1678678483524" duration="1325000" />
       <workItem from="1678679885380" duration="246000" />
-    </task>
-    <task id="LOCAL-00051" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач.">
-      <created>1677693515299</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1677693515299</updated>
+      <workItem from="1678681283849" duration="140000" />
+      <workItem from="1678686632743" duration="19829000" />
     </task>
     <task id="LOCAL-00052" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 6/9 задач.">
       <created>1677706871462</created>
@@ -570,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678679730173</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="JS_mini_project готовий.">
+      <created>1678681419024</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1678681419025</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
