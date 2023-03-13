@@ -28,6 +28,7 @@
         let userLog = function (valueUser, block, ...rest) {
             let keys2 = Object.keys(valueUser);
             let userDiv = document.createElement('div');
+            userDiv.className = 'userDiv';
             if (rest.length) {
                 let h2Main1 = document.createElement('h2');
                 h2Main1.className = 'h2Main';
@@ -45,8 +46,8 @@
                     userLog(valueUser[keys2[i]], userDiv, keys2[i]);
                 }
             }
-            userDiv.style.paddingLeft = '20px';
-            userDiv.style.borderLeft = '2px solid cornflowerblue';
+            // userDiv.style.paddingLeft = '20px';
+            // userDiv.style.borderLeft = '2px solid cornflowerblue';
             block.appendChild(userDiv);
             };
             userLog(value[id -1], detailsMain_div);

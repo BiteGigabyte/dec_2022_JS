@@ -68,6 +68,7 @@
 #detailsMain_div {
     border: 2px solid cornflowerblue;
     padding: 5px 0 5px 15px;
+    box-sizing: border-box;
 }
 
 .h2Main {
@@ -104,6 +105,10 @@
     padding: 3px;
 }
 
+.userDiv {
+    padding-left: 20px;
+    border-left: 2px solid cornflowerblue;
+}
 
 
 
@@ -144,6 +149,9 @@
 .blue-text {
     color: #AB529C;
 }
+
+
+
 /**/
 /**/
 @media screen and (max-width: 450px) {
@@ -153,6 +161,14 @@
 
     .postDetailsH4 {
         width: 100%;
+    }
+
+    .userDiv {
+        padding-left: 3px;
+    }
+
+    #detailsMain_div {
+        padding-left: 3px;
     }
 }
 
