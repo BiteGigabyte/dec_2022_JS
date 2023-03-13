@@ -46,8 +46,6 @@
                     userLog(valueUser[keys2[i]], userDiv, keys2[i]);
                 }
             }
-            // userDiv.style.paddingLeft = '20px';
-            // userDiv.style.borderLeft = '2px solid cornflowerblue';
             block.appendChild(userDiv);
             };
             userLog(value[id -1], detailsMain_div);
@@ -97,13 +95,17 @@ let title = function (object) {
             //
             let titleH3 = document.createElement('h3');
             //
-            titleH3.addEventListener('mouseenter', function() {
-                titleH3.style.backgroundColor = '#30A100';
+            titleA.addEventListener('mouseenter', function() {
+                titleA.style.backgroundColor = '#30A100';
                 titleH3.style.color = '#CCCCCC';
+                titleA.style.color = 'cornflowerblue';
+                titleA.style.border = '2px solid cornflowerblue';
             });
-            titleH3.addEventListener('mouseleave', function() {
-                titleH3.style.backgroundColor = '';
+            titleA.addEventListener('mouseleave', function() {
+                titleA.style.backgroundColor = '';
+                titleA.style.color = 'black';
                 titleH3.style.color = 'black';
+                titleA.style.border = '2px solid lightgreen';
             });
             //
             titleH3.className = 'titleH3';
