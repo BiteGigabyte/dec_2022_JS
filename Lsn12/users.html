@@ -17,6 +17,7 @@
     let url = new URL('http://jsonplaceholder.typicode.com/users');
     let users_div = document.getElementById('users-div');
     let ul = document.createElement('ul');
+    ul.className = 'usersUl';
     fetch(url)
         .then(users => users.json())
         .then(users => {
@@ -27,7 +28,7 @@
                 ul.appendChild(li);
                 //
                 li.addEventListener('mouseenter', () => {
-                    li.style.padding = '1%';
+                    li.style.padding = '2%';
                     li.style.color = 'white';
                 });
                 li.addEventListener('mouseleave', () => {
@@ -45,6 +46,7 @@
     body {
         background: url(fone1.jpg);
         background-size: cover;
+        box-sizing: border-box;
     }
 
     .usersLi {
