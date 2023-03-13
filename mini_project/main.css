@@ -75,6 +75,7 @@
 .h2Main {
     width: 100%;
     margin: 0 3px 0 3px;
+    overflow: auto;
 }
 
 #postsInput {
@@ -83,6 +84,7 @@
     padding: 10px;
     font-size: 300%;
     overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 #titleDiv {
@@ -131,6 +133,7 @@
     margin-bottom: 3%;
     background: darkorange;
     font-size: 130%;
+    overflow: auto;
 }
 
 #postDetailsDiv {
@@ -151,6 +154,7 @@
 .postDetailsH4 {
     width: 50%;
     font-size: 120%;
+    overflow: auto;
 }
 
 .red-text {

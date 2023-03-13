@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0224b396-fd44-4ba8-bd24-fe265472a7b3" name="Changes" comment="JS_mini_project готовий.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lsn12/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lsn12/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,14 +224,7 @@
       <workItem from="1678579915622" duration="93000" />
       <workItem from="1678611295322" duration="32778000" />
       <workItem from="1678653379414" duration="8012000" />
-      <workItem from="1678661681191" duration="8317000" />
-    </task>
-    <task id="LOCAL-00045" summary="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 6/7 задач.">
-      <created>1677459814855</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1677459814855</updated>
+      <workItem from="1678661681191" duration="9198000" />
     </task>
     <task id="LOCAL-00046" summary="JS домашнє завдання 8 in progress.&#10;&#10;- Готово 7/7 задач.">
       <created>1677468329340</created>
@@ -570,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678667971576</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="JS_mini_project готовий.">
+      <created>1678670072183</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1678670072183</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
