@@ -150,7 +150,7 @@ body {
     border-radius: 5px;
 }
 
-#postDetailsDiv1 {
+.postDetailsDiv1 {
     display: flex;
     /*flex-wrap: wrap;*/
     hyphens: auto;
