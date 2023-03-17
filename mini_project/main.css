@@ -150,16 +150,24 @@ body {
     border-radius: 5px;
 }
 
-#postDetailsDiv {
+#postDetailsDiv1 {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    hyphens: auto;
+    flex-basis: 50%;
+    /*width: 100%;*/
+    overflow: auto;
 }
 
 .detailsDiv {
-    width: 100%;
+    /*width: 50%;*/
+    box-sizing: border-box;
     border: 2px solid darkorange;
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    flex-basis: 50%;
+    flex-shrink: 0;
+    /**/
     margin-bottom: 1%;
     padding-left: 3%;
     background: lightgreen;
@@ -168,9 +176,12 @@ body {
 }
 
 .postDetailsH4 {
-    width: 50%;
+    /*width: 50%;*/
     font-size: 120%;
     overflow: auto;
+    /*display: flex;*/
+    /*display: inline-block;*/
+    /*overflow: auto;*/
 }
 
 .red-text {

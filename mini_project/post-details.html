@@ -12,7 +12,8 @@
 <!--На странице post-details.html:-->
 <!---->
 <div id="postDiv"></div>
-<div id="postDetailsDiv"></div>
+<div id="postDetailsDiv1"></div>
+<!--<div id="postDetailsDiv2"></div>-->
 
 
 
@@ -61,18 +62,28 @@
     //
     //
     let postDetails = new URL (`https://jsonplaceholder.typicode.com/posts/${postUserId}/comments`);
-    let postDetailsDiv = document.getElementById('postDetailsDiv');
+    // let postDetailsDiv1 = document.getElementById('postDetailsDiv1');
+    let postDetailsDiv1;
+    // let postDetailsDiv2 = document.getElementById('postDetailsDiv2');
     //
+            //
+            //
+            //
     fetch(postDetails)
         .then(value => value.json())
         .then(value => {
             //
+            //
             let getterDetails = function (getter) {
+
+                    postDetailsDiv1 = document.getElementById(`postDetailsDiv1`);
                 const detailsKeys = Object.keys(getter);
                 let detailsDiv = document.createElement('div');
                     detailsDiv.className = 'detailsDiv';
                 for (let i = 0; i < detailsKeys.length; ++i)
                 {
+                    //
+                    //
                     if (typeof getter[detailsKeys[i]] !== 'object') {
                         let postDetailsH4 = document.createElement('h4');
                         postDetailsH4.className = 'postDetailsH4';
@@ -84,7 +95,8 @@
                       }
                 }
                 //
-                postDetailsDiv.appendChild(detailsDiv);
+                //
+                postDetailsDiv1.appendChild(detailsDiv);
             }
             getterDetails(value);
         });
