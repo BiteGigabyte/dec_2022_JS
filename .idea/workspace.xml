@@ -56,6 +56,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -233,14 +234,7 @@
       <workItem from="1678743099201" duration="342000" />
       <workItem from="1678746358730" duration="1992000" />
       <workItem from="1679000007725" duration="2725000" />
-      <workItem from="1679048090579" duration="13597000" />
-    </task>
-    <task id="LOCAL-00056" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
-      <created>1677718472135</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1677718472135</updated>
+      <workItem from="1679048090579" duration="22794000" />
     </task>
     <task id="LOCAL-00057" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 8/9 задач.">
       <created>1677718492230</created>
@@ -578,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678748357760</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="JS_mini_project готовий.">
+      <created>1679069943063</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1679069943063</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

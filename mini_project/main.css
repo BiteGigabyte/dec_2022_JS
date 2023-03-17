@@ -157,6 +157,7 @@ body {
     flex-basis: 50%;
     /*width: 100%;*/
     overflow: auto;
+    margin-bottom: 2%;
 }
 
 .detailsDiv {

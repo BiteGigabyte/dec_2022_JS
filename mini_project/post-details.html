@@ -12,7 +12,7 @@
 <!--На странице post-details.html:-->
 <!---->
 <div id="postDiv"></div>
-<div id="postDetailsDiv1"></div>
+<!--<div id="postDetailsDiv1"></div>-->
 <!--<div id="postDetailsDiv2"></div>-->
 
 
@@ -66,6 +66,8 @@
     let postDetailsDiv1;
     // let postDetailsDiv2 = document.getElementById('postDetailsDiv2');
     //
+    let fourBlocks = 0;
+    let blocksId = -1;
             //
             //
             //
@@ -75,8 +77,13 @@
             //
             //
             let getterDetails = function (getter) {
-
-                    postDetailsDiv1 = document.getElementById(`postDetailsDiv1`);
+                if (document.getElementById(`postDetailsDiv${blocksId}`) && fourBlocks % 4 !== 0) {
+                    postDetailsDiv1 = document.getElementById(`postDetailsDiv${blocksId}`);
+                } else {
+                    ++blocksId;
+                    postDetailsDiv1 = document.createElement('div');
+                    postDetailsDiv1.id = `postDetailsDiv${blocksId}`;
+                }
                 const detailsKeys = Object.keys(getter);
                 let detailsDiv = document.createElement('div');
                     detailsDiv.className = 'detailsDiv';
@@ -88,15 +95,19 @@
                         let postDetailsH4 = document.createElement('h4');
                         postDetailsH4.className = 'postDetailsH4';
                         postDetailsH4.innerHTML = `<b><u>${detailsKeys[i]}:</u></b> <span class="red-text">${getter[detailsKeys[i]]}</span>`;
-                        console.log(postDetailsH4);
+                        // console.log(postDetailsH4);
                         detailsDiv.appendChild(postDetailsH4);
                     } else {
                             getterDetails(getter[detailsKeys[i]]);
+                    ++fourBlocks;
                       }
                 }
                 //
                 //
                 postDetailsDiv1.appendChild(detailsDiv);
+                document.body.appendChild(postDetailsDiv1);
+                console.log(fourBlocks);
+                console.log('Blocks: ' + blocksId);
             }
             getterDetails(value);
         });
