@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,14 +235,8 @@
       <workItem from="1678743099201" duration="342000" />
       <workItem from="1678746358730" duration="1992000" />
       <workItem from="1679000007725" duration="2725000" />
-      <workItem from="1679048090579" duration="23323000" />
-    </task>
-    <task id="LOCAL-00058" summary="JS домашнє завдання 9 in progress.&#10;&#10;- Готово 9/9 задач.">
-      <created>1677765997621</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1677765997621</updated>
+      <workItem from="1679048090579" duration="42491000" />
+      <workItem from="1679101751795" duration="313000" />
     </task>
     <task id="LOCAL-00059" summary="JS домашнє завдання 9 Done!&#10;&#10;- Готово 9/9 задач.">
       <created>1677766027629</created>
@@ -579,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679081797347</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="JS_mini_project готовий.">
+      <created>1679082321697</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1679082321697</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

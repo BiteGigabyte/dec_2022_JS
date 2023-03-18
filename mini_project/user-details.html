@@ -141,7 +141,7 @@ postsInput.addEventListener('click', function() {
 let postsId = postsUrl.searchParams.get('id');
 fetch(`https://jsonplaceholder.typicode.com/users/${postsId}/posts`)
     .then(value => value.json())
-    .then(async value => {
+    .then(value => {
         title(value, 1);
         titleDiv.scrollIntoView({behavior: 'smooth'});
 //

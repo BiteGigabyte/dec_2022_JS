@@ -152,37 +152,47 @@ body {
 
 .postDetailsDiv1 {
     display: flex;
-    /*flex-wrap: wrap;*/
     hyphens: auto;
     flex-basis: 50%;
-    /*width: 100%;*/
     overflow: auto;
     margin-bottom: 2%;
+        scrollbar-width: auto;
+        scrollbar-color: darkorange limegreen;
+}
+
+/* Chrome, Edge, and Safari */
+.postDetailsDiv1::-webkit-scrollbar {
+    width: 12px;
+}
+
+.postDetailsDiv1::-webkit-scrollbar-track {
+    background: limegreen;
+}
+
+.postDetailsDiv1::-webkit-scrollbar-thumb {
+    background-color: darkorange;
+    border-radius: 10px;
+    border: 2px solid #575757;
+}
+
+.postDetailsDiv1:hover::-webkit-scrollbar-thumb {
+    background-color: cornflowerblue;
 }
 
 .detailsDiv {
-    /*width: 50%;*/
     box-sizing: border-box;
     border: 2px solid darkorange;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    flex-basis: 50%;
+    flex-basis: 45%;
     flex-shrink: 0;
-    /**/
     margin-bottom: 1%;
     padding-left: 3%;
     background: lightgreen;
     border-radius: 5px;
-
 }
 
 .postDetailsH4 {
-    /*width: 50%;*/
     font-size: 120%;
     overflow: auto;
-    /*display: flex;*/
-    /*display: inline-block;*/
-    /*overflow: auto;*/
 }
 
 .red-text {
@@ -198,6 +208,7 @@ body {
 /**/
 /**/
 @media screen and (max-width: 450px) {
+
     .headH2-index {
         width: 100%;
     }
@@ -223,6 +234,16 @@ body {
         padding-left: 3px;
     }
 
+    .postDetailsDiv1 {
+        flex-wrap: wrap;
+    }
+
+    .detailsDiv {
+        flex-basis: 100%;
+        flex-shrink: 1;
+        overflow: auto;
+    }
+
     #detailsMain_div {
         padding-left: 3px;
     }
@@ -237,6 +258,30 @@ body {
 
     #titleA5 {
         margin-bottom: 5vh;
+    }
+
+    .postDetailsH4 {
+        scrollbar-width: auto;
+        scrollbar-color: darkorange limegreen;
+    }
+
+    /* Chrome, Edge, and Safari */
+    .postDetailsH4::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .postDetailsH4::-webkit-scrollbar-track {
+        background: limegreen;
+    }
+
+    .postDetailsH4::-webkit-scrollbar-thumb {
+        background-color: darkorange;
+        border-radius: 10px;
+        border: 2px solid #575757;
+    }
+
+    .postDetailsH4:hover::-webkit-scrollbar-thumb {
+        background-color: cornflowerblue;
     }
 }
 

@@ -12,8 +12,6 @@
 <!--На странице post-details.html:-->
 <!---->
 <div id="postDiv"></div>
-<!--<div id="postDetailsDiv1"></div>-->
-<!--<div id="postDetailsDiv2"></div>-->
 
 
 
@@ -62,9 +60,7 @@
     //
     //
     let postDetails = new URL (`https://jsonplaceholder.typicode.com/posts/${postUserId}/comments`);
-    // let postDetailsDiv1 = document.getElementById('postDetailsDiv1');
     let postDetailsDiv1;
-    // let postDetailsDiv2 = document.getElementById('postDetailsDiv2');
     //
     let fourBlocks = 0;
     let blocksId = -1;
@@ -86,34 +82,76 @@
                 }
                 const detailsKeys = Object.keys(getter);
                 let detailsDiv = document.createElement('div');
-                    detailsDiv.className = 'detailsDiv';
-                for (let i = 0; i < detailsKeys.length; ++i)
-                {
+                detailsDiv.className = 'detailsDiv';
+                for (let i = 0; i < detailsKeys.length; ++i) {
                     //
                     //
                     if (typeof getter[detailsKeys[i]] !== 'object') {
                         let postDetailsH4 = document.createElement('h4');
                         postDetailsH4.className = 'postDetailsH4';
                         postDetailsH4.innerHTML = `<b><u>${detailsKeys[i]}:</u></b> <span class="red-text">${getter[detailsKeys[i]]}</span>`;
-                        // console.log(postDetailsH4);
                         detailsDiv.appendChild(postDetailsH4);
                     } else {
-                            getterDetails(getter[detailsKeys[i]]);
-                    ++fourBlocks;
-                    if (fourBlocks % 4 ===0) {
-                    postDetailsDiv1.className = `postDetailsDiv${1}`;
+                        getterDetails(getter[detailsKeys[i]]);
+                        ++fourBlocks;
+                        if (fourBlocks % 4 === 0) {
+                            postDetailsDiv1.className = `postDetailsDiv${1}`;
+                        }
                     }
-                      }
                 }
                 //
                 //
                 postDetailsDiv1.appendChild(detailsDiv);
                 document.body.appendChild(postDetailsDiv1);
-                console.log(fourBlocks);
-                console.log('Blocks: ' + blocksId);
+                //
+
+
             }
             getterDetails(value);
+            //
+
+            //
+            for (let scrollId = 1; document.getElementById(`postDetailsDiv${scrollId}`); ++scrollId) {
+            let intervalScroll;
+            const scrollableElement = document.getElementById(`postDetailsDiv${scrollId}`); // елемент, який може прокручуватися
+            scrollableElement.addEventListener('mouseout', () => {
+                intervalScroll = setInterval(intervalFunc(scrollableElement), 1200);
+            });
+            scrollableElement.addEventListener('mouseover', () => {
+                clearInterval(intervalScroll);
+            });
+        }
+            //
+            const scrollableBlocks = document.getElementsByClassName(`postDetailsH4`);
+            for (let scrollId = 0; scrollId < scrollableBlocks.length; ++scrollId) {
+                let intervalScroll1 = [];
+                scrollableBlocks[scrollId].addEventListener('mouseout', () => {
+                    intervalScroll1[scrollId] = setInterval(intervalFunc(scrollableBlocks[scrollId]), 1200);
+                });
+                scrollableBlocks[scrollId].addEventListener('mouseover', () => {
+                    clearInterval(intervalScroll1[scrollId]);
+                });
+            }
+            //
+            //
+            let intervalFunc = function (scrollableElements) {
+                return function () {
+                if (scrollableElements.scrollLeft === 0) {
+                    const scrollWidth = scrollableElements.scrollWidth; // загальна відстань прокручування
+                    const visibleWidth = scrollableElements.clientWidth; // ширина видимої області скролу
+                    const scrollDistance = 0.25 * (scrollWidth - visibleWidth); // відстань, на яку потрібно прокрутити
+                    scrollableElements.scrollLeft += scrollDistance; // прокручуємо скрол на 25% від можливого прокручування
+                } else {
+                    const scrollWidth = scrollableElements.scrollWidth;
+                    const visibleWidth = scrollableElements.clientWidth;
+                    const scrollDistance = 0.25 * (scrollWidth - visibleWidth);
+                    scrollableElements.scrollLeft -= scrollDistance;
+                }
+                }
+            }
         });
+//
+
 //
 //
 </script>
