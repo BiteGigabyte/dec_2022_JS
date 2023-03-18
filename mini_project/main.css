@@ -49,9 +49,11 @@ body {
     text-align: center;
     font-size: 130%;
     overflow: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto;
     color: white;
-/*    */
+    /*    */
 }
 
 .index-input {
@@ -117,7 +119,7 @@ body {
     width: 19.5%;
     border: 2px solid lightgreen;
     box-sizing: border-box;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .titleA:hover {
@@ -129,6 +131,9 @@ body {
     font-size: 150%;
     padding: 3px;
     color: white;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .userDiv {
@@ -152,12 +157,14 @@ body {
 
 .postDetailsDiv1 {
     display: flex;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto;
     flex-basis: 50%;
     overflow: auto;
     margin-bottom: 2%;
-        scrollbar-width: auto;
-        scrollbar-color: darkorange limegreen;
+    scrollbar-width: auto;
+    scrollbar-color: darkorange limegreen;
 }
 
 /* Chrome, Edge, and Safari */

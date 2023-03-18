@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), interest-cohort=()">-->
     <title>Post details</title>
 </head>
 <body>
@@ -17,7 +20,7 @@
 
 <script>
     let postDiv = document.getElementById('postDiv');
-// 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
+    // 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
     const thisPostUrl = new URL (location.href);
     const postId = thisPostUrl.searchParams.get('id');
     const postUserId = thisPostUrl.searchParams.get('userId');
@@ -51,12 +54,12 @@
                 }
             }
             postObject(value);
-    });
+        });
 
 
 
 
-// 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+    // 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
     //
     //
     let postDetails = new URL (`https://jsonplaceholder.typicode.com/posts/${postUserId}/comments`);
@@ -64,9 +67,9 @@
     //
     let fourBlocks = 0;
     let blocksId = -1;
-            //
-            //
-            //
+    //
+    //
+    //
     fetch(postDetails)
         .then(value => value.json())
         .then(value => {
@@ -112,15 +115,15 @@
 
             //
             for (let scrollId = 1; document.getElementById(`postDetailsDiv${scrollId}`); ++scrollId) {
-            let intervalScroll;
-            const scrollableElement = document.getElementById(`postDetailsDiv${scrollId}`); // елемент, який може прокручуватися
-            scrollableElement.addEventListener('mouseout', () => {
-                intervalScroll = setInterval(intervalFunc(scrollableElement), 1200);
-            });
-            scrollableElement.addEventListener('mouseover', () => {
-                clearInterval(intervalScroll);
-            });
-        }
+                let intervalScroll;
+                const scrollableElement = document.getElementById(`postDetailsDiv${scrollId}`); // елемент, який може прокручуватися
+                scrollableElement.addEventListener('mouseout', () => {
+                    intervalScroll = setInterval(intervalFunc(scrollableElement), 1200);
+                });
+                scrollableElement.addEventListener('mouseover', () => {
+                    clearInterval(intervalScroll);
+                });
+            }
             //
             const scrollableBlocks = document.getElementsByClassName(`postDetailsH4`);
             for (let scrollId = 0; scrollId < scrollableBlocks.length; ++scrollId) {
@@ -136,24 +139,24 @@
             //
             let intervalFunc = function (scrollableElements) {
                 return function () {
-                if (scrollableElements.scrollLeft === 0) {
-                    const scrollWidth = scrollableElements.scrollWidth; // загальна відстань прокручування
-                    const visibleWidth = scrollableElements.clientWidth; // ширина видимої області скролу
-                    const scrollDistance = 0.25 * (scrollWidth - visibleWidth); // відстань, на яку потрібно прокрутити
-                    scrollableElements.scrollLeft += scrollDistance; // прокручуємо скрол на 25% від можливого прокручування
-                } else {
-                    const scrollWidth = scrollableElements.scrollWidth;
-                    const visibleWidth = scrollableElements.clientWidth;
-                    const scrollDistance = 0.25 * (scrollWidth - visibleWidth);
-                    scrollableElements.scrollLeft -= scrollDistance;
-                }
+                    if (scrollableElements.scrollLeft === 0) {
+                        const scrollWidth = scrollableElements.scrollWidth; // загальна відстань прокручування
+                        const visibleWidth = scrollableElements.clientWidth; // ширина видимої області скролу
+                        const scrollDistance = 0.25 * (scrollWidth - visibleWidth); // відстань, на яку потрібно прокрутити
+                        scrollableElements.scrollLeft += scrollDistance; // прокручуємо скрол на 25% від можливого прокручування
+                    } else {
+                        const scrollWidth = scrollableElements.scrollWidth;
+                        const visibleWidth = scrollableElements.clientWidth;
+                        const scrollDistance = 0.25 * (scrollWidth - visibleWidth);
+                        scrollableElements.scrollLeft -= scrollDistance;
+                    }
                 }
             }
         });
-//
+    //
 
-//
-//
+    //
+    //
 </script>
 
 

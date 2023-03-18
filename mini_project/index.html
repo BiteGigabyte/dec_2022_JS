@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), interest-cohort=()">-->
     <title>Project_JS</title>
 </head>
 <body>
@@ -57,6 +60,7 @@
                 buttonH3_index.type = 'button';
                 buttonH3_index.value = 'User details';
                 linkH3_index.href = `user-details.html?id=${user1[user1_keys[0]]}`;
+                linkH3_index.title= "Перейти на сторінку користувача";
                 linkH3_index.target = '_blank';
                 //
                 buttonH3_index.addEventListener('mouseenter', function() {

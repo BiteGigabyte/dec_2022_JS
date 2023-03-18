@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), interest-cohort=()">-->
     <title>User details</title>
 </head>
 <body>
@@ -22,31 +25,31 @@
     const id = JSON.parse(userM.searchParams.get('id'));
     const user = new URL ('https://jsonplaceholder.typicode.com/users');
     fetch (user)
-    .then(value => value.json())
+        .then(value => value.json())
         .then(value => {
             let detailsMain_div = document.getElementById('detailsMain_div');
-        let userLog = function (valueUser, block, ...rest) {
-            let keys2 = Object.keys(valueUser);
-            let userDiv = document.createElement('div');
-            userDiv.className = 'userDiv';
-            if (rest.length) {
-                let h2Main1 = document.createElement('h2');
-                h2Main1.className = 'h2Main';
-                h2Main1.innerHTML = `<u>${rest}</u>:`;
-                userDiv.appendChild(h2Main1);
-            }
-            for (let i = 0; i < keys2.length; ++i)
-            {
+            let userLog = function (valueUser, block, ...rest) {
+                let keys2 = Object.keys(valueUser);
+                let userDiv = document.createElement('div');
+                userDiv.className = 'userDiv';
+                if (rest.length) {
+                    let h2Main1 = document.createElement('h2');
+                    h2Main1.className = 'h2Main';
+                    h2Main1.innerHTML = `<u>${rest}</u>:`;
+                    userDiv.appendChild(h2Main1);
+                }
+                for (let i = 0; i < keys2.length; ++i)
+                {
                     let h2Main = document.createElement('h2');
                     h2Main.className = 'h2Main';
-                if (typeof valueUser[keys2[i]] !== 'object') {
-                    h2Main.innerHTML = `${keys2[i]}: ${valueUser[keys2[i]]}`;
-                    userDiv.appendChild(h2Main);
-                } else {
-                    userLog(valueUser[keys2[i]], userDiv, keys2[i]);
+                    if (typeof valueUser[keys2[i]] !== 'object') {
+                        h2Main.innerHTML = `${keys2[i]}: ${valueUser[keys2[i]]}`;
+                        userDiv.appendChild(h2Main);
+                    } else {
+                        userLog(valueUser[keys2[i]], userDiv, keys2[i]);
+                    }
                 }
-            }
-            block.appendChild(userDiv);
+                block.appendChild(userDiv);
             };
             userLog(value[id -1], detailsMain_div);
         });
@@ -58,135 +61,135 @@
 <!---->
 <!---->
 <!---->
-    <input type="button" id="postsInput" value="posts of current user">
-    <div id="titleDiv"></div>
+<input type="button" id="postsInput" value="posts of current user">
+<div id="titleDiv"></div>
 <!---->
 <script>
     //
-const postsInput = document.getElementById('postsInput');
-//
+    const postsInput = document.getElementById('postsInput');
+    //
     postsInput.addEventListener('mouseenter', function() {
         postsInput.style.backgroundColor = 'cornflowerblue';
     });
     postsInput.addEventListener('mouseleave', function() {
         postsInput.style.backgroundColor = '';
     });
-//
-let titleDiv = document.getElementById('titleDiv');
-//
-const postsUrl = new URL (location.href);
+    //
+    let titleDiv = document.getElementById('titleDiv');
+    //
+    const postsUrl = new URL (location.href);
     //
     // Для id коментарів по 10 штук (щоб не писало нові блоки ще раз)
     let x = 0;
-let title = function (object, ...rest) {
-            x = rest[0];
-    //
-    let titleKeys = Object.keys(object);
-    for (let i = 0; i < titleKeys.length; ++i) {
-        if (typeof object[titleKeys[i]] !== 'object' && titleKeys[i] === 'title') {
-            //
-    // 6 Каждому посту додати кнопку/посилання, при клацу на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
-            //
-            //
-            let titleA;
-            //
-            //можна додати тернарку
-            if(document.getElementById(`titleA${x}`)) {
-                titleA = document.getElementById(`titleA${x}`);
-            } else {
-                titleA = document.createElement('a');
-                titleA.id = `titleA${x}`;
-            }
+    let title = function (object, ...rest) {
+        x = rest[0];
+        //
+        let titleKeys = Object.keys(object);
+        for (let i = 0; i < titleKeys.length; ++i) {
+            if (typeof object[titleKeys[i]] !== 'object' && titleKeys[i] === 'title') {
+                //
+                // 6 Каждому посту додати кнопку/посилання, при клацу на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
+                //
+                //
+                let titleA;
+                //
+                //можна додати тернарку
+                if(document.getElementById(`titleA${x}`)) {
+                    titleA = document.getElementById(`titleA${x}`);
+                } else {
+                    titleA = document.createElement('a');
+                    titleA.id = `titleA${x}`;
+                }
                 titleA.className = `titleA`;
                 titleA.href = `post-details.html?id=${JSON.parse(postsUrl.searchParams.get('id'))}&userId=${object['id']}`;
                 titleA.target = '_blank';
-            //
-            let titleH3;
-            if (document.getElementById(`titleH3${x}`)) {
-                titleH3 = document.getElementById(`titleH3${x}`);
-            } else {
-                titleH3 = document.createElement('h3');
-                titleH3.id = `titleH3${x}`;
+                //
+                let titleH3;
+                if (document.getElementById(`titleH3${x}`)) {
+                    titleH3 = document.getElementById(`titleH3${x}`);
+                } else {
+                    titleH3 = document.createElement('h3');
+                    titleH3.id = `titleH3${x}`;
+                }
+                //
+                titleA.addEventListener('mouseenter', function() {
+                    titleA.style.backgroundColor = '#30A100';
+                    titleH3.style.color = '#CCCCCC';
+                    titleA.style.color = 'cornflowerblue';
+                    titleA.style.border = '2px solid cornflowerblue';
+                });
+                titleA.addEventListener('mouseleave', function() {
+                    titleA.style.backgroundColor = '';
+                    titleA.style.color = 'white';
+                    titleH3.style.color = 'white';
+                    titleA.style.border = '2px solid lightgreen';
+                });
+                //
+                //
+                titleH3.className = 'titleH3';
+                titleH3.innerText = `- ${object[titleKeys[i]]}`;
+                titleA.appendChild(titleH3);
+                titleDiv.appendChild(titleA);
+                ++x;
             }
-            //
-        titleA.addEventListener('mouseenter', function() {
-                titleA.style.backgroundColor = '#30A100';
-                titleH3.style.color = '#CCCCCC';
-                titleA.style.color = 'cornflowerblue';
-                titleA.style.border = '2px solid cornflowerblue';
-            });
-        titleA.addEventListener('mouseleave', function() {
-                titleA.style.backgroundColor = '';
-                titleA.style.color = 'white';
-                titleH3.style.color = 'white';
-                titleA.style.border = '2px solid lightgreen';
-            });
-            //
-            //
-            titleH3.className = 'titleH3';
-            titleH3.innerText = `- ${object[titleKeys[i]]}`;
-            titleA.appendChild(titleH3);
-            titleDiv.appendChild(titleA);
-            ++x;
-        }
-        else if (typeof object[titleKeys[i]] === 'object') {
-            title(object[titleKeys[i]], x);
+            else if (typeof object[titleKeys[i]] === 'object') {
+                title(object[titleKeys[i]], x);
+            }
         }
     }
-}
-//
+    //
     let intervalValue;
+    //
+    postsInput.addEventListener('click', function() {
+        let postsId = postsUrl.searchParams.get('id');
+        fetch(`https://jsonplaceholder.typicode.com/users/${postsId}/posts`)
+            .then(value => value.json())
+            .then(value => {
+                title(value, 1);
+                titleDiv.scrollIntoView({behavior: 'smooth'});
 //
-postsInput.addEventListener('click', function() {
-let postsId = postsUrl.searchParams.get('id');
-fetch(`https://jsonplaceholder.typicode.com/users/${postsId}/posts`)
-    .then(value => value.json())
-    .then(value => {
-        title(value, 1);
-        titleDiv.scrollIntoView({behavior: 'smooth'});
-//
-        if(intervalValue) {
-            clearInterval(intervalValue);
-        }
-        //
-        let titleBlocks = [];
-        for (let i = 1; i < 11; ++i) {
-            let element = document.getElementById(`titleA${i}`);
-            titleBlocks.push({element, isBlinking: false});
-        }
-        let interval = async function () {
-            for (let j = 0; j < titleBlocks.length; ++j)
-            {
-                // Вимкнути попередній елемент
-                if (j > 0) {
-                    titleBlocks[j - 1].element.style.background = '';
-                    titleBlocks[j - 1].isBlinking = false;
-                } else {
-                    titleBlocks[j].element.style.background = '';
-                    titleBlocks[j].isBlinking = false;
+                if(intervalValue) {
+                    clearInterval(intervalValue);
                 }
-                // Вмикаємо наступний елемент, якщо він не блимає в даний момент
-                if (!titleBlocks[j].isBlinking) {
-                    titleBlocks[j].element.style.background = '#30A100';
-                    titleBlocks[j].isBlinking = true;
+                //
+                let titleBlocks = [];
+                for (let i = 1; i < 11; ++i) {
+                    let element = document.getElementById(`titleA${i}`);
+                    titleBlocks.push({element, isBlinking: false});
                 }
-                // Затримка перед наступною ітерацією
-                await new Promise(resolve => setTimeout(resolve, 30));
-                //Вимикаю останній
-                if (j === 9) {
-                    titleBlocks[j].element.style.background = '';
-                    titleBlocks[j].isBlinking = false;
+                let interval = async function () {
+                    for (let j = 0; j < titleBlocks.length; ++j)
+                    {
+                        // Вимкнути попередній елемент
+                        if (j > 0) {
+                            titleBlocks[j - 1].element.style.background = '';
+                            titleBlocks[j - 1].isBlinking = false;
+                        } else {
+                            titleBlocks[j].element.style.background = '';
+                            titleBlocks[j].isBlinking = false;
+                        }
+                        // Вмикаємо наступний елемент, якщо він не блимає в даний момент
+                        if (!titleBlocks[j].isBlinking) {
+                            titleBlocks[j].element.style.background = '#30A100';
+                            titleBlocks[j].isBlinking = true;
+                        }
+                        // Затримка перед наступною ітерацією
+                        await new Promise(resolve => setTimeout(resolve, 30));
+                        //Вимикаю останній
+                        if (j === 9) {
+                            titleBlocks[j].element.style.background = '';
+                            titleBlocks[j].isBlinking = false;
+                        }
+                    }
                 }
-            }
-        }
-        //
-        setTimeout(interval, 500);
-        intervalValue = setInterval(interval, 3000);
-        //
+                //
+                setTimeout(interval, 500);
+                intervalValue = setInterval(interval, 3000);
+                //
+            });
     });
-});
-//
-//
+    //
+    //
 </script>
 
 
